@@ -127,5 +127,80 @@ namespace ZooloskiVrt.Common.Domen
           
             this.Uslov = $"cast(IdPaketa as nvarchar(10)) like '{id}' and NazivPaketa like '{nazivPaketa}' and cast(Cena as float) like '{cena}' and DatumDo like '{datumDo}'";
         }
+
+
+        public int GetIdPaketa()
+        {
+            return IdPaketa;
+        }
+
+        public void SetIdPaketa(int id)
+        {
+            if (id <= 0)
+            {
+                throw new ArgumentOutOfRangeException("Id ne sme biti manji od 0!");
+            }
+
+            IdPaketa=id;
+        }
+
+        public void SetNazivPaketa(string naziv)
+        {
+            if (naziv == null)
+            {
+                throw new ArgumentNullException("Naziv ne sme biti null!");
+            }
+
+            if (naziv.Trim().Length == 0 || naziv == "")
+            {
+                throw new ArgumentException("Naziv ne sme biti prazan strig!");
+            }
+
+            NazivPaketa = naziv;
+
+        }
+
+        public string GetNazivPaketa()
+        {
+            return NazivPaketa;
+        }
+
+        public void SetCena(double cena)
+        {
+            if (cena < 0)
+            {
+                throw new ArgumentOutOfRangeException("Cena ne sme biti manja od 0");
+            }
+            Cena = cena;
+        }
+
+        public double GetCena()
+        {
+            return Cena;
+        }
+
+        public void SetdDatumDo(DateTime datum)
+        {
+           
+            if (datum < DateTime.Now)
+            {
+                throw new ArgumentOutOfRangeException("Datum ne sme biti u proslosti");
+            }
+            DatumDo = datum;
+        }
+
+        public DateTime GetDatumDo()
+        {
+            return DatumDo;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Paket paket &&
+                   IdPaketa == paket.IdPaketa &&
+                   NazivPaketa == paket.NazivPaketa &&
+                   Cena == paket.Cena &&
+                   DatumDo == paket.DatumDo;
+        }
     }
 }

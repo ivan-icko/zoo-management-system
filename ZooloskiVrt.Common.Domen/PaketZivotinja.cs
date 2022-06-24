@@ -51,7 +51,7 @@ namespace ZooloskiVrt.Common.Domen
         
 
         /// <summary>
-        /// Neimplementiran proerty koja azurira instancu klase
+        /// Neimplementiran property koji azurira instancu klase
         /// </summary>
         public string Azuriranje => throw new NotImplementedException();
 
@@ -61,6 +61,9 @@ namespace ZooloskiVrt.Common.Domen
         /// </summary>
         public string JoinUslov { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
+        /// <value>
+        /// Atribut klase koji predstavlja atribut identifikator u bazi
+        /// </value>
         public string IdKolona => throw new NotImplementedException();
 
 
