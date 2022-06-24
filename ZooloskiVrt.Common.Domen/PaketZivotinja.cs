@@ -23,6 +23,10 @@ namespace ZooloskiVrt.Common.Domen
         /// </value>
         public int IdPaketa { get; set; }
 
+
+
+
+
         /// <value>
         /// Naziv tabele u bazi podataka
         /// </value>
@@ -75,6 +79,37 @@ namespace ZooloskiVrt.Common.Domen
         public IDomenskiObjekat ProcitajRed(SqlDataReader rezultat)
         {
             throw new NotImplementedException();
+        }
+
+
+
+
+
+        public void SetIdZivotinje(int id)
+        {
+            if (id< 0)
+            {
+                throw new ArgumentOutOfRangeException("Id zivotinje ne sme biti manji od 0");
+            }
+            IdZivotinje = id;
+        }
+
+        public int GetIdZivotinje()
+        {
+            return IdZivotinje;
+        }
+
+        public void SetIdPaketa(int id)
+        {
+            if (id < 0)
+            {
+                throw new ArgumentOutOfRangeException("Id paketa ne sme biti manji od 0");
+            }
+            IdPaketa = id;
+        }
+        public int GetIdPaketa()
+        {
+            return IdPaketa;
         }
     }
 }

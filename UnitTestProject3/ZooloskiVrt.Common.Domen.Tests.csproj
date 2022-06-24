@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="PaketTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PaketZivotinjaTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
