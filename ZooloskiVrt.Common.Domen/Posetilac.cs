@@ -59,7 +59,7 @@ namespace ZooloskiVrt.Common.Domen
         [Browsable(false)]
         public string Azuriranje  {get;set;}
         /// <value>
-        /// Sql upit koji se konstruise u slucaju potrebe za spajanjem tabela. <br/>
+        /// Sql upit koji se konstruise u slucaju potrebe za spajanjem tabela
         /// </value>
         [Browsable(false)]
         public string JoinUslov { get; set; }
