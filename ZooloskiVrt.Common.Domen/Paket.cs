@@ -194,8 +194,13 @@ namespace ZooloskiVrt.Common.Domen
             return DatumDo;
         }
 
-
-
-
+        public override bool Equals(object obj)
+        {
+            return obj is Paket paket &&
+                   IdPaketa == paket.IdPaketa &&
+                   NazivPaketa == paket.NazivPaketa &&
+                   Cena == paket.Cena &&
+                   DatumDo == paket.DatumDo;
+        }
     }
 }
