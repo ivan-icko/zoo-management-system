@@ -160,6 +160,41 @@ namespace ZooloskiVrt.Common.Domen
 
         }
 
+        public string GetNazivPaketa()
+        {
+            return NazivPaketa;
+        }
+
+        public void SetCena(double cena)
+        {
+            if (cena < 0)
+            {
+                throw new ArgumentOutOfRangeException("Cena ne sme biti manja od 0");
+            }
+            Cena = cena;
+        }
+
+        public double GetCena()
+        {
+            return Cena;
+        }
+
+        public void SetdDatumDo(DateTime datum)
+        {
+           
+            if (datum < DateTime.Now)
+            {
+                throw new ArgumentOutOfRangeException("Datum ne sme biti u proslosti");
+            }
+            DatumDo = datum;
+        }
+
+        public DateTime GetDatumDo()
+        {
+            return DatumDo;
+        }
+
+
 
 
     }
