@@ -83,12 +83,5 @@ namespace UnitTestProject3
             Assert.Equal(datum, p.GetDatumDo());
         }
 
-        
-
-
-
-
-
-
     }
 }
