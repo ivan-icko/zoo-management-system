@@ -68,6 +68,9 @@
     <Compile Include="PaketZivotinjaTests.cs" />
     <Compile Include="PosetilacTests.cs" />
     <Compile Include="PosetilacPrijavaTests.cs" />
+    <Compile Include="PrijavaTests.cs" />
+    <Compile Include="ZivotinjaTests.cs" />
+    <Compile Include="ZaposleniTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
