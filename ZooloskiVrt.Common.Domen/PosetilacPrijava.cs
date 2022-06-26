@@ -101,5 +101,135 @@ namespace ZooloskiVrt.Common.Domen
             };
             return pp;
         }
+        /// <summary>
+        /// Funkcija koja postavlja ime i prezime
+        /// </summary>
+        /// <param name="imeIPrezime">Ime i prezime</param>
+        public void SetImeIPrezime(string imeIPrezime)
+        {
+            if (imeIPrezime == null)
+            {
+                throw new ArgumentNullException("Ime i prezime ne sme biti null!");
+            }
+
+            if (imeIPrezime.Trim().Length == 0 || imeIPrezime == "")
+            {
+                throw new ArgumentException("Ime i prezime ne sme biti prazan string!");
+            }
+
+            ImeIPrezime = imeIPrezime;
+        }
+        
+
+        /// <summary>
+        /// Funkcija koja vraca ime i prezime
+        /// </summary>
+        /// <returns>Ime i prezime</returns>
+        public string GetImeIPrezime()
+        {
+            return ImeIPrezime;
+        }
+
+        /// <summary>
+        /// Funkcija koja postavlja naziv paketa
+        /// </summary>
+        /// <param name="naziv">Naziv paketa</param>
+        public void SetNazivPaketa(string naziv)
+        {
+            if (naziv == null)
+            {
+                throw new ArgumentNullException("Naziv paketa ne sme biti null!");
+            }
+
+            if (naziv.Trim().Length == 0 || naziv == "")
+            {
+                throw new ArgumentException("Naziv paketa ne sme biti prazan string!");
+            }
+
+            NazivPaketa = naziv;
+        }
+
+        /// <summary>
+        /// Funkcija koja vraca naziv paketa
+        /// </summary>
+        /// <returns>Naziv paketa</returns>
+        public string GetNazivPaketa()
+        {
+            return NazivPaketa;
+        }
+
+        /// <summary>
+        /// Funkcija koja postavlja telefon posetioca
+        /// </summary>
+        /// <param name="telefon">Telefon posetioca</param>
+        public void SetTelefon(string telefon)
+        {
+            if (telefon == null)
+            {
+                throw new ArgumentNullException("Telefon ne sme biti null!");
+            }
+
+            if (telefon.Trim().Length == 0 || telefon == "")
+            {
+                throw new ArgumentException("Telefon ne sme biti prazan string!");
+            }
+
+            Telefon = telefon;
+        }
+
+        /// <summary>
+        /// Funkcija koja vraca telefon posetioca
+        /// </summary>
+        /// <returns>Telefon posetioca</returns>
+        public string GetTelefon()
+        {
+            return Telefon;
+        }
+
+        /// <summary>
+        /// Funkcija koja postavlja email posetioca
+        /// </summary>
+        /// <param name="email">Email posetioca</param>
+        public void SetEmail(string email)
+        {
+            if (email == null)
+            {
+                throw new ArgumentNullException("Email ne sme biti null!");
+            }
+
+            if (email.Trim().Length == 0 || email == "")
+            {
+                throw new ArgumentException("Email ne sme biti prazan string!");
+            }
+
+            Email = email;
+        }
+
+        /// <summary>
+        /// Metoda koja vraca email posetioca
+        /// </summary>
+        /// <returns>Email posetioca</returns>
+        public string GetEmail()
+        {
+            return Email;
+        }
+
+        /// <summary>
+        /// Metoda koja vraca broj osoba koje se prijavljuju
+        /// </summary>
+        /// <param name="broj">Broj osoba</param>
+        public void SetBrojOsoba(int broj)
+        {
+            if (BrojOsoba < 1)
+            {
+                throw new ArgumentOutOfRangeException("Broj osoba mora biti veci od 0");
+            }
+            BrojOsoba = broj;
+        }
+
+
+
+
+
     }
 }
