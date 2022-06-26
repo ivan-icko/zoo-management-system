@@ -135,9 +135,9 @@ namespace ZooloskiVrt.Common.Domen
         }
 
         /// <summary>
-        /// Metoda 
+        /// Metoda koja postavlja telefon posetioca
         /// </summary>
-        /// <param name="telefon"></param>
+        /// <param name="telefon">Telefon posetioca</param>
         public void SetTelefon(string telefon)
         {
             if (telefon == null)
@@ -153,11 +153,18 @@ namespace ZooloskiVrt.Common.Domen
             Telefon = telefon;
         }
 
+        /// <summary>
+        /// Metoda koja vraca telefon posetioca
+        /// </summary>
+        /// <returns>Telefon posetioca</returns>
         public string GetTelefon()
         {
             return Telefon;
         }
-
+        /// <summary>
+        /// Metoda koja vraca email
+        /// </summary>
+        /// <param name="email"></param>
         public void SetEmail(string email)
         {
             if (email == null)
@@ -172,7 +179,10 @@ namespace ZooloskiVrt.Common.Domen
 
             Email = email;
         }
-
+        /// <summary>
+        /// Metoda koja vraca email posetioca
+        /// </summary>
+        /// <returns>Email posetioca</returns>
         public string GetEmail()
         {
             return Email;
