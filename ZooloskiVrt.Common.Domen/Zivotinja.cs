@@ -82,6 +82,7 @@ namespace ZooloskiVrt.Common.Domen
             }
             IdZivotinje = id;
         }
+
         /// <summary>
         /// Metoda koja vraca id zivotinje
         /// </summary>
