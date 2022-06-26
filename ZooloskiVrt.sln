@@ -19,11 +19,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooloskiVrt.Server.BrokerBa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooloskiVrt.Server.AplikacionaLogika", "ZooloskiVrt.Server.AplikacionaLogika\ZooloskiVrt.Server.AplikacionaLogika.csproj", "{CC843024-A8FB-4D3F-B034-87E7BF53A922}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooloskiVrt.Common.Domen.Tests", "UnitTestProject3\ZooloskiVrt.Common.Domen.Tests.csproj", "{A8491A36-5151-40C3-BF85-D6224D451A6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooloskiVrt.Common.Domen.Testss", "UnitTestProject3\ZooloskiVrt.Common.Domen.Testss.csproj", "{A8491A36-5151-40C3-BF85-D6224D451A6D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooloskiVrt.Server.SistemskeOperacije.Tests", "UnitTestProject5\ZooloskiVrt.Server.SistemskeOperacije.Tests.csproj", "{DFAB9DD3-E325-4608-A6FE-03EEBECD9ADA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5389E9F6-FD0D-4B7D-B347-553F314A698C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooloskiVrt.Common.Domen.Tests", "ClassLibrary2\ZooloskiVrt.Common.Domen.Tests.csproj", "{E35C331F-3635-405B-8881-0E09DA7127F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,12 +71,13 @@ Global
 		{DFAB9DD3-E325-4608-A6FE-03EEBECD9ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFAB9DD3-E325-4608-A6FE-03EEBECD9ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFAB9DD3-E325-4608-A6FE-03EEBECD9ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E35C331F-3635-405B-8881-0E09DA7127F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E35C331F-3635-405B-8881-0E09DA7127F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E35C331F-3635-405B-8881-0E09DA7127F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E35C331F-3635-405B-8881-0E09DA7127F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{A8491A36-5151-40C3-BF85-D6224D451A6D} = {5389E9F6-FD0D-4B7D-B347-553F314A698C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42551F47-191F-49B8-BB01-2BBF9BF7194C}
