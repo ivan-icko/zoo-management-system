@@ -68,5 +68,146 @@ namespace ZooloskiVrt.Common.Domen
             return obj is Zivotinja zivotinja &&
                    IdZivotinje == zivotinja.IdZivotinje;
         }
+
+        /// <summary>
+        /// Metoda koja postavlja id zivotinje
+        /// </summary>
+        /// <param name="id">Id zivotinje</param>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        public void SetIdZivotinje(int id)
+        {
+            if (id < 0)
+            {
+                throw new ArgumentOutOfRangeException("Id zivotinje ne sme biti manji od 0");
+            }
+            IdZivotinje = id;
+        }
+        /// <summary>
+        /// Metoda koja vraca id zivotinje
+        /// </summary>
+        /// <returns>Id zivotinje</returns>
+        public int GetIdZivotinje()
+        {
+            return IdZivotinje;
+        }
+
+        /// <summary>
+        /// Metoda koja postavlja vrstu zivotinje
+        /// </summary>
+        /// <param name="vrsta">Vrsta zivotinje</param>
+        /// <exception cref="ArgumentOutOfRangeException">Kada ne vrsta null</exception>
+        /// <exception cref="ArgumentException">Kada je vrsta prazan string</exception>
+        public void SetVrsta(string vrsta)
+        {
+            if (vrsta == null)
+            {
+                throw new ArgumentNullException("Vrsta ne sme biti null!");
+            }
+
+            if (vrsta.Trim().Length == 0 || vrsta == "")
+            {
+                throw new ArgumentException("Vrsta ne sme biti prazan strig!");
+            }
+
+            Vrsta = vrsta;
+        }
+
+        /// <summary>
+        /// Metoda koja vraca vrstu zivotinje
+        /// </summary>
+        /// <returns>Vrsta zivotinje</returns>
+        public string GetVrsta()
+        {
+            return Vrsta;
+        }
+
+        /// <summary>
+        /// Metoda koja postavlja oznaku zivotinje
+        /// </summary>
+        /// <param name="id">Oznaka zivotinje</param>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        public void SetOznakaZivotinje(int id)
+        {
+            if (id < 0)
+            {
+                throw new ArgumentOutOfRangeException("Oznaka zivotinje ne sme biti manji od 0");
+            }
+            OznakaZivotinje = id;
+        }
+        /// <summary>
+        /// Metoda koja vraca oznaku zivotinje
+        /// </summary>
+        /// <returns>Oznaka zivotinje</returns>
+        public int GetOznakaZivotinje()
+        {
+            return OznakaZivotinje;
+        }
+
+
+        /// <summary>
+        /// Metoda koja postavlja starost zivotinje
+        /// </summary>
+        /// <param name="starost">Starost zivotinje</param>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        public void SetStarost(int starost)
+        {
+            if (starost < 0)
+            {
+                throw new ArgumentOutOfRangeException("Starost zivotinje ne sme biti manji od 0 godina");
+            }
+            Starost = starost;
+        }
+        /// <summary>
+        /// Metoda koja vraca starost zivotinje
+        /// </summary>
+        /// <returns>Starost zivotinje</returns>
+        public int GetStarost()
+        {
+            return Starost;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /// <summary>
+        /// Metoda koja postavlja staniste zivotinje
+        /// </summary>
+        /// <param name="staniste">Staniste zivotinje</param>
+        /// <exception cref="ArgumentOutOfRangeException">Kada je staniste null</exception>
+        /// <exception cref="ArgumentException">Kada je staniste prazan string</exception>
+        public void SetStaniste(string staniste)
+        {
+            if (staniste == null)
+            {
+                throw new ArgumentNullException("Staniste ne sme biti null!");
+            }
+
+            if (staniste.Trim().Length == 0 || staniste == "")
+            {
+                throw new ArgumentException("Staniste ne sme biti prazan strig!");
+            }
+
+            Staniste = staniste;
+        }
+
+        /// <summary>
+        /// Metoda koja vraca staniste zivotinje
+        /// </summary>
+        /// <returns>Staniste zivotinje</returns>
+        public string GetStaniste()
+        {
+            return Staniste;
+        }
+
     }
 }

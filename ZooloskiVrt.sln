@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooloskiVrt.Server.Aplikaci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooloskiVrt.Common.Domen.Tests", "UnitTestProject3\ZooloskiVrt.Common.Domen.Tests.csproj", "{A8491A36-5151-40C3-BF85-D6224D451A6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject5", "UnitTestProject5\UnitTestProject5.csproj", "{DFAB9DD3-E325-4608-A6FE-03EEBECD9ADA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooloskiVrt.Server.SistemskeOperacije.Tests", "UnitTestProject5\ZooloskiVrt.Server.SistemskeOperacije.Tests.csproj", "{DFAB9DD3-E325-4608-A6FE-03EEBECD9ADA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

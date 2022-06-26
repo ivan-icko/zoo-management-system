@@ -68,7 +68,8 @@ namespace UnitTestProject3
         [Fact]
         public void SetBrojOsoba_Ok_Fact()
         {
-            Assert.Throws<ArgumentOutOfRangeException>(() => p.SetBrojOsoba(33));
+            p.SetBrojOsoba(3);
+            Assert.Equal(3, p.GetBrojOsoba());
         }
 
 
