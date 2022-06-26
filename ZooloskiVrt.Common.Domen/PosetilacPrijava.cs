@@ -101,5 +101,101 @@ namespace ZooloskiVrt.Common.Domen
             };
             return pp;
         }
+
+        public void SetImeIPrezime(string imeIPrezime)
+        {
+            if (imeIPrezime == null)
+            {
+                throw new ArgumentNullException("Ime i prezime ne sme biti null!");
+            }
+
+            if (imeIPrezime.Trim().Length == 0 || imeIPrezime == "")
+            {
+                throw new ArgumentException("Ime i prezime ne sme biti prazan string!");
+            }
+
+            ImeIPrezime = imeIPrezime;
+        }
+        
+        public string GetImeIPrezime()
+        {
+            return ImeIPrezime;
+        }
+
+
+        public void SetNazivPaketa(string naziv)
+        {
+            if (naziv == null)
+            {
+                throw new ArgumentNullException("Naziv paketa ne sme biti null!");
+            }
+
+            if (naziv.Trim().Length == 0 || naziv == "")
+            {
+                throw new ArgumentException("Naziv paketa ne sme biti prazan string!");
+            }
+
+            NazivPaketa = naziv;
+        }
+
+        public string GetNazivPaketa()
+        {
+            return NazivPaketa;
+        }
+
+        public void SetTelefon(string telefon)
+        {
+            if (telefon == null)
+            {
+                throw new ArgumentNullException("Telefon ne sme biti null!");
+            }
+
+            if (telefon.Trim().Length == 0 || telefon == "")
+            {
+                throw new ArgumentException("Telefon ne sme biti prazan string!");
+            }
+
+            Telefon = telefon;
+        }
+
+        public string GetTelefon()
+        {
+            return Telefon;
+        }
+
+
+        public void SetEmail(string email)
+        {
+            if (email == null)
+            {
+                throw new ArgumentNullException("Email ne sme biti null!");
+            }
+
+            if (email.Trim().Length == 0 || email == "")
+            {
+                throw new ArgumentException("Email ne sme biti prazan string!");
+            }
+
+            Email = email;
+        }
+
+        public string GetEmail()
+        {
+            return Email;
+        }
+
+        public void SetBrojOsoba(int broj)
+        {
+            if (BrojOsoba < 1)
+            {
+                throw new ArgumentOutOfRangeException("Broj osoba mora biti veci od 0");
+            }
+            BrojOsoba = broj;
+        }
+
+
+
+
+
     }
 }
