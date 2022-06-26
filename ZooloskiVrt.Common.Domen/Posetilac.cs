@@ -86,5 +86,99 @@ namespace ZooloskiVrt.Common.Domen
             };
             return p;
         }
+
+        /// <summary>
+        /// Metoda koja postavlja id posetioca
+        /// </summary>
+        /// <param name="id">id posetioca</param>
+        public void SetIdPosetioca(int id)
+        {
+            if (id < 0)
+            {
+                throw new ArgumentOutOfRangeException("Id ne sme biti negativan vrednost");
+            }
+            IdPosetioca = id;
+        }
+        /// <summary>
+        /// Metoda koja vraca id posetioca
+        /// </summary>
+        /// <returns>Id posetioca</returns>
+        public int GetIdPosetioca()
+        {
+            return IdPosetioca;
+        }
+        /// <summary>
+        /// Metoda koja postavlja ime i prezime posetioca
+        /// </summary>
+        /// <param name="imeIPrezime">Ime i prezime posetioca</param>
+        public void SetImeIPrezime(string imeIPrezime)
+        {
+            if (imeIPrezime == null)
+            {
+                throw new ArgumentNullException("Ime i prezime ne sme biti null!");
+            }
+
+            if (imeIPrezime.Trim().Length == 0 || imeIPrezime == "")
+            {
+                throw new ArgumentException("Ime i prezime ne sme biti prazan strig!");
+            }
+
+            ImeIPrezime = imeIPrezime;
+        }
+        /// <summary>
+        /// Metoda koja vraca ime i prezime posetioca
+        /// </summary>
+        /// <returns>Ime i prezime posetioca</returns>
+        public string GetImeIPrezime()
+        {
+            return ImeIPrezime;
+        }
+
+        /// <summary>
+        /// Metoda 
+        /// </summary>
+        /// <param name="telefon"></param>
+        public void SetTelefon(string telefon)
+        {
+            if (telefon == null)
+            {
+                throw new ArgumentNullException("Telefon ne sme biti null!");
+            }
+
+            if (telefon.Trim().Length == 0 || telefon == "")
+            {
+                throw new ArgumentException("Telefon ne sme biti prazan strig!");
+            }
+
+            Telefon = telefon;
+        }
+
+        public string GetTelefon()
+        {
+            return Telefon;
+        }
+
+        public void SetEmail(string email)
+        {
+            if (email == null)
+            {
+                throw new ArgumentNullException("Email ne sme biti null!");
+            }
+
+            if (email.Trim().Length == 0 || email == "")
+            {
+                throw new ArgumentException("Email ne sme biti prazan strig!");
+            }
+
+            Email = email;
+        }
+
+        public string GetEmail()
+        {
+            return Email;
+        }
+
+
+
     }
 }

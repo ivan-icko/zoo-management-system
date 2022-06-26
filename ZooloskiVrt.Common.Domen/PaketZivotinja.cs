@@ -84,7 +84,10 @@ namespace ZooloskiVrt.Common.Domen
 
 
 
-
+        /// <summary>
+        /// Funckija koja postavlja identifikator zivotinje
+        /// </summary>
+        /// <param name="id">id zivotinje</param>
         public void SetIdZivotinje(int id)
         {
             if (id< 0)
@@ -94,11 +97,19 @@ namespace ZooloskiVrt.Common.Domen
             IdZivotinje = id;
         }
 
+        /// <summary>
+        /// Funkcija koja vraca id zivotinje
+        /// </summary>
+        /// <returns>Id zivotinje</returns>
         public int GetIdZivotinje()
         {
             return IdZivotinje;
         }
 
+        /// <summary>
+        /// Funkcija koja postavlja identifikator paketa
+        /// </summary>
+        /// <param name="id">id paketa</param>
         public void SetIdPaketa(int id)
         {
             if (id < 0)
@@ -107,6 +118,10 @@ namespace ZooloskiVrt.Common.Domen
             }
             IdPaketa = id;
         }
+        /// <summary>
+        /// Funkcija koja braca id paketa
+        /// </summary>
+        /// <returns></returns>
         public int GetIdPaketa()
         {
             return IdPaketa;

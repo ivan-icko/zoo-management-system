@@ -3,7 +3,7 @@ using ZooloskiVrt.Common.Domen;
 using Xunit;
 
 
-namespace XUnitTestProject3
+namespace UnitTestProject3
 {
     
     public class PaketTests
