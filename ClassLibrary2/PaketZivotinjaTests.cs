@@ -9,6 +9,7 @@ namespace UnitTestProject3
     public class PaketZivotinjaTests
     {
         private readonly PaketZivotinja p;
+
         public PaketZivotinjaTests()
         {
              p = new PaketZivotinja();
