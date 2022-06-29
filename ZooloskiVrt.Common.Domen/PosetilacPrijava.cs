@@ -46,7 +46,7 @@ namespace ZooloskiVrt.Common.Domen
         /// Naziv tabele u bazi podataka
         /// </value>
         [Browsable(false)]
-        public string NazivTabele =>"Posetilac";
+        public string NazivTabele =>"PosetilacPrijava";
 
         /// <value>
         /// Vrednosti atributa klase koji se dematerijalizuju u kolone baze
@@ -81,7 +81,12 @@ namespace ZooloskiVrt.Common.Domen
         /// Atribut klase koji predstavlja jedinstveni identifikator reda u bazi
         /// </value>
         [Browsable(false)]
-        public string IdKolona { get; }
+        public string IdKolona { get; } = "IdPosetilac";
+
+        public PosetilacPrijava()
+        {
+
+        }
 
         /// <summary>
         /// Funkcija koja cita jedan red iz tabele PosetilacPrijava baze podataka

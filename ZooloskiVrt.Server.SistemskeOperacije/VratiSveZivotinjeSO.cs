@@ -12,19 +12,8 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
     {
         public List<Zivotinja> Zivotinje { get; set; } = new List<Zivotinja>();
 
-        public  List<Zivotinja> VratiSveZivotinje()
-        {
-
-            try
-            {
-                Zivotinje = repozitorijum.VratiSve(new Zivotinja()).OfType<Zivotinja>().ToList();
-                //Izvrsi();
-            }
-            catch (Exception ex)
-            {
-                Zivotinje = null;
-                throw;
-            }
+        public  List<Zivotinja> VratiSveZivotinje() { 
+                Izvrsi();
             return Zivotinje;
         }
 

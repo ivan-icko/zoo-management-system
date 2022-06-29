@@ -10,34 +10,32 @@ using Moq;
 using Autofac.Extras.Moq;
 using ZooloskiVrt.Server.Repozitorujum;
 
-
-namespace ZooVrt.Common.AplicationLogic.Tests
+namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
 {
-    public class VratiSvePosetioceSOPom : VratiSvePosetioceSO
+    public class VratiSvePosetiocePom : VratiSvePosetioceSO
     {
-        public VratiSvePosetioceSOPom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
+        public VratiSvePosetiocePom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
         {
             this.repozitorijum = (IRepozitorijum<IDomenskiObjekat>)mockRepository;
         }
     }
 
-
     public class VratiSvePosetioceSOTests
     {
         [Fact]
-        public void VratiSveZivotinje_Ok_Fact()
+        public void VratiSvePosetioce_Ok_Fact()
         {
             using (var mock = AutoMock.GetLoose())
             {
                 mock.Mock<IRepozitorijum<IDomenskiObjekat>>()
                     .Setup(x => x.VratiSve(new Posetilac()))
-                    .Returns(GetZivotinje().OfType<IDomenskiObjekat>().ToList());
+                    .Returns(GetPosetioci().OfType<IDomenskiObjekat>().ToList());
 
 
-                VratiSvePosetioceSO cls = new VratiSvePosetioceSOPom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
+                VratiSvePosetioceSO cls = new VratiSvePosetiocePom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
 
 
-                var expected = GetZivotinje();
+                var expected = GetPosetioci();
                 var actual = cls.VratiSvePosetioce();
 
 
@@ -48,13 +46,13 @@ namespace ZooVrt.Common.AplicationLogic.Tests
         }
 
 
-        private List<Posetilac> GetZivotinje()
+        private List<Posetilac> GetPosetioci()
         {
             return new List<Posetilac>()
             {
                 new Posetilac()
                 {
-                  Email="icko@gmail.com"
+                   Telefon="234"
                 }
             };
         }

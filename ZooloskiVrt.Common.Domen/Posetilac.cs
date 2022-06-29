@@ -68,7 +68,11 @@ namespace ZooloskiVrt.Common.Domen
         ///Atribut klase koji predstavlja atribut identifikator u bazi
         /// </value>
         [Browsable(false)]
-        public string IdKolona { get; }
+        public string IdKolona { get; set; }
+
+
+        public Posetilac() { }
+
 
         /// <summary>
         /// Funkcija koja cita jedan red iz tabele Posetilac baze podataka

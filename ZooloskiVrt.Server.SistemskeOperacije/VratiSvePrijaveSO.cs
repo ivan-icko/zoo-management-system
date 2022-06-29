@@ -12,16 +12,28 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         private Prijava pp;
         public List<Prijava> Prijave { get; set; } = new List<Prijava>();
 
+        public VratiSvePrijaveSO() : base()
+        {
+
+        }
+
         public VratiSvePrijaveSO(Prijava pp)
         {
             this.pp = pp;
         }
 
+        public List<Prijava> VratiSvePrijave()
+        {
+            Izvrsi();
+            return Prijave;
+        }
+
+
         protected override void Izvrsi()
         {
             try
             {
-                Prijave = repozitorijum.VratiSve(pp).OfType<Prijava>().ToList();
+                Prijave = repozitorijum.VratiSve(new Prijava()).OfType<Prijava>().ToList();
             }
             catch (Exception ex)
             {

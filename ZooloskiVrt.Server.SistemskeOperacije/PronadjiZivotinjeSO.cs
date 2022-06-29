@@ -15,12 +15,23 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         {
             Z = z;
         }
+        public PronadjiZivotinjeSO():base()
+        {
+
+        }
+
+        public List<Zivotinja> VratiZivotinje()
+        {
+            Izvrsi();
+            return Zivotinje;
+        }
+
 
         protected override void Izvrsi()
         {
             try
             {
-                Zivotinje = repozitorijum.Pretrazi(Z).OfType<Zivotinja>().ToList();
+                Zivotinje = repozitorijum.Pretrazi(new Zivotinja()).OfType<Zivotinja>().ToList();
             }
             catch (Exception ex)
             {

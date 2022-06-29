@@ -18,6 +18,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         }
 
 
+
         protected override void Izvrsi()
         {
             try

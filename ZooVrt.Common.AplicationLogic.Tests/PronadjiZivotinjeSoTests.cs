@@ -12,31 +12,31 @@ using ZooloskiVrt.Server.Repozitorujum;
 
 namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
 {
-    public class VratiSvePaketeSOPom : VratiSvePaketeSO
+    public class PronadjiZivotinjePom : PronadjiZivotinjeSO
     {
-        public VratiSvePaketeSOPom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
+        public PronadjiZivotinjePom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
         {
             this.repozitorijum = (IRepozitorijum<IDomenskiObjekat>)mockRepository;
         }
     }
 
-    public class VratiSvePaketeTests
+    public class PronadjiZivotinjeSOTests
     {
         [Fact]
-        public void VratiSvePakete_Ok_Fact()
+        public void PronadjiZivotinju_Ok_Fact()
         {
             using (var mock = AutoMock.GetLoose())
             {
                 mock.Mock<IRepozitorijum<IDomenskiObjekat>>()
-                    .Setup(x => x.VratiSve(new Paket()))
-                    .Returns(GetPaketi().OfType<IDomenskiObjekat>().ToList());
+                    .Setup(x => x.Pretrazi(new Zivotinja()))
+                    .Returns(GetZivotinje().OfType<IDomenskiObjekat>().ToList());
 
-                
-                VratiSvePaketeSO cls = new VratiSvePaketeSOPom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
+
+                PronadjiZivotinjeSO cls = new PronadjiZivotinjePom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
                 
 
-                var expected = GetPaketi();
-                var actual = cls.VratiSvePakete();
+                var expected = GetZivotinje();
+                var actual = cls.VratiZivotinje();
 
 
                 Assert.True(actual != null);
@@ -46,13 +46,17 @@ namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
         }
 
 
-        private List<Paket> GetPaketi()
+        private List<Zivotinja> GetZivotinje()
         {
-            return new List<Paket>()
+            return new List<Zivotinja>()
             {
-                new Paket()
+                new Zivotinja()
                 {
-                    NazivPaketa="Paket1"
+                    Vrsta="Lav",
+                    Staniste="Afrika",
+                    Starost=123,
+                    TipIshrane=TipIshrane.Mesojed,
+                    Pol=Pol.Muski
                 }
             };
         }

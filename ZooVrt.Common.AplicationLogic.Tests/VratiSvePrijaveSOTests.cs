@@ -12,31 +12,35 @@ using ZooloskiVrt.Server.Repozitorujum;
 
 namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
 {
-    public class VratiSvePaketeSOPom : VratiSvePaketeSO
+    public class VratiSvePrijaveSOPom : VratiSvePrijaveSO
     {
-        public VratiSvePaketeSOPom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
+        
+
+        public VratiSvePrijaveSOPom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
         {
             this.repozitorijum = (IRepozitorijum<IDomenskiObjekat>)mockRepository;
         }
+      
     }
 
-    public class VratiSvePaketeTests
+    public class VratiSvePrijaveSOTests
     {
         [Fact]
-        public void VratiSvePakete_Ok_Fact()
+        public void VratiSvePrijave_Ok_Fact()
         {
             using (var mock = AutoMock.GetLoose())
             {
+                
                 mock.Mock<IRepozitorijum<IDomenskiObjekat>>()
-                    .Setup(x => x.VratiSve(new Paket()))
-                    .Returns(GetPaketi().OfType<IDomenskiObjekat>().ToList());
+                    .Setup(x => x.VratiSve(new Prijava()))
+                    .Returns(GetPrijave().OfType<IDomenskiObjekat>().ToList());
 
-                
-                VratiSvePaketeSO cls = new VratiSvePaketeSOPom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
-                
 
-                var expected = GetPaketi();
-                var actual = cls.VratiSvePakete();
+                VratiSvePrijaveSO cls = new VratiSvePrijaveSOPom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
+
+
+                var expected = GetPrijave();
+                var actual = cls.VratiSvePrijave();
 
 
                 Assert.True(actual != null);
@@ -46,13 +50,13 @@ namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
         }
 
 
-        private List<Paket> GetPaketi()
+        private List<Prijava> GetPrijave()
         {
-            return new List<Paket>()
+            return new List<Prijava>()
             {
-                new Paket()
+                new Prijava()
                 {
-                    NazivPaketa="Paket1"
+                    BrojOsoba=3
                 }
             };
         }

@@ -107,8 +107,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PronadjiZaposlenogSOTests.cs" />
+    <Compile Include="PronadjiZivotinjeSoTests.cs" />
     <Compile Include="VratiSvePaketeSOTests.cs" />
     <Compile Include="VratiSvePosetioceSOTests.cs" />
+    <Compile Include="VratiSvePrijaveSOTests.cs" />
+    <Compile Include="VratiSvePrijaveZaPosetioceSOTests.cs" />
     <Compile Include="VratiSveZivotinjeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
