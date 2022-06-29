@@ -73,6 +73,7 @@ namespace ZooloskiVrt.Common.Domen
 
         public Posetilac() { }
 
+      
 
         /// <summary>
         /// Funkcija koja cita jedan red iz tabele Posetilac baze podataka
@@ -192,7 +193,10 @@ namespace ZooloskiVrt.Common.Domen
             return Email;
         }
 
-
-
+        public override bool Equals(object obj)
+        {
+            return obj is Posetilac posetilac &&
+                   IdPosetioca == posetilac.IdPosetioca;
+        }
     }
 }

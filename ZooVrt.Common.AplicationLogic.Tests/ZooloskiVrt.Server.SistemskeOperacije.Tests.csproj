@@ -107,7 +107,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AazurirajPaketSOTests.cs" />
+    <Compile Include="AzurirajPaketSOTests.cs" />
     <Compile Include="AzurirajZivotinjuSOTests.cs" />
     <Compile Include="ObrisiZivotinjuSOTests.cs" />
     <Compile Include="PronadjiPaketeSOTests.cs" />

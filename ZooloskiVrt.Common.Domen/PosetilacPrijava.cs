@@ -232,9 +232,11 @@ namespace ZooloskiVrt.Common.Domen
             BrojOsoba = broj;
         }
 
-
-
-
-
+        public override bool Equals(object obj)
+        {
+            return obj is PosetilacPrijava prijava &&
+                   ImeIPrezime == prijava.ImeIPrezime &&
+                   NazivPaketa == prijava.NazivPaketa;
+        }
     }
 }

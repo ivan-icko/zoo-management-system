@@ -27,6 +27,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
         {
             using (var mock = AutoMock.GetLoose())
             {
+                Posetilac p = new Posetilac();
                 mock.Mock<IRepozitorijum<IDomenskiObjekat>>()
                     .Setup(x => x.VratiSve(new Posetilac()))
                     .Returns(GetPosetioci().OfType<IDomenskiObjekat>().ToList());
@@ -34,8 +35,8 @@ namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
 
                 VratiSvePosetioceSO cls = new VratiSvePosetiocePom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
 
-
                 var expected = GetPosetioci();
+                cls.p = p;
                 var actual = cls.VratiSvePosetioce();
 
 

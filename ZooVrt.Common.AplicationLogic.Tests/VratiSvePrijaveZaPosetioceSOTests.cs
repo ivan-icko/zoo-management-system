@@ -27,8 +27,9 @@ namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
         {
             using (var mock = AutoMock.GetLoose())
             {
+                PosetilacPrijava pp = new PosetilacPrijava();
                 mock.Mock<IRepozitorijum<IDomenskiObjekat>>()
-                    .Setup(x => x.VratiSve(new PosetilacPrijava()))
+                    .Setup(x => x.VratiSve(pp))
                     .Returns(GetPrijave().OfType<IDomenskiObjekat>().ToList());
 
 
@@ -36,6 +37,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
 
 
                 var expected = GetPrijave();
+                cls.pp = pp;
                 var actual = cls.VratiPosetiocePrijava();
 
 

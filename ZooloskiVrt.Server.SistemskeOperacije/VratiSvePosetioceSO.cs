@@ -10,11 +10,17 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
     public class VratiSvePosetioceSO : OpstaSistemskaOperacija
     {
         public List<Posetilac> Posetioci { get; set; } = new List<Posetilac>();
+        public Posetilac p;
 
         public List<Posetilac> VratiSvePosetioce()
         {
             Izvrsi();
             return Posetioci;
+        }
+
+        public VratiSvePosetioceSO() : base()
+        {
+
         }
 
         protected override void Izvrsi()

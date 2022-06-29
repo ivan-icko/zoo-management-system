@@ -9,7 +9,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
 {
     public class VratiSvePrijaveZaPosetioceSO : OpstaSistemskaOperacija
     {
-        private PosetilacPrijava pp;
+        public PosetilacPrijava pp;
 
         public VratiSvePrijaveZaPosetioceSO() : base()
         {
@@ -24,9 +24,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         public List<PosetilacPrijava> VratiPosetiocePrijava()
         {
             Izvrsi();
-            List<PosetilacPrijava> p = new List<PosetilacPrijava>();
-            p.Add(pp);
-            return p ;
+            return Prijave;
         }
 
         public List<PosetilacPrijava> Prijave { get; set; } = new List<PosetilacPrijava>();
