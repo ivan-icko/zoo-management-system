@@ -36,7 +36,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
 
             try
             {
-                Paketi = repozitorijum.Pretrazi(new Paket()).OfType<Paket>().ToList();
+                Paketi = repozitorijum.Pretrazi(P).OfType<Paket>().ToList();
             }
             catch (Exception ex)
             {

@@ -27,8 +27,9 @@ namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
         {
             using (var mock = AutoMock.GetLoose())
             {
+                Zaposleni z = new Zaposleni() { Sifra = "SId" };
                 mock.Mock<IRepozitorijum<IDomenskiObjekat>>()
-                    .Setup(x => x.Pretrazi(new Zaposleni()))
+                    .Setup(x => x.Pretrazi(z))
                     .Returns(GetZaposleni().OfType<IDomenskiObjekat>().ToList());
 
 
@@ -36,6 +37,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
 
 
                 var expected = GetZaposleni();
+                cls.Zaposleni = z;
                 var actual = cls.VratiZaposlenog();
 
 

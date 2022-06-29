@@ -35,7 +35,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         {
             try
             {
-                ZaposleniList = (repozitorijum.Pretrazi(new Zaposleni()).OfType<Zaposleni>().ToList());
+                ZaposleniList = (repozitorijum.Pretrazi(Zaposleni).OfType<Zaposleni>().ToList());
             }
             catch (Exception ex)
             {

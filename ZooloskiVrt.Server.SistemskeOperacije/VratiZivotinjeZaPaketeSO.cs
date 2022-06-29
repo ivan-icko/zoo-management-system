@@ -9,12 +9,24 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
 {
     public class VratiZivotinjeZaPaketeSO : OpstaSistemskaOperacija
     {
-        private Zivotinja zivotinja;
+        public Zivotinja zivotinja;
 
         public VratiZivotinjeZaPaketeSO(Zivotinja zivotinja)
         {
             this.zivotinja = zivotinja;
         }
+
+        public VratiZivotinjeZaPaketeSO() : base()
+        {
+
+        }
+
+        public List<Zivotinja> VratiSveZivotinjeZaPakete()
+        {
+            Izvrsi();
+            return Zivotinje;
+        }
+
 
         public List<Zivotinja> Zivotinje { get; set; } = new List<Zivotinja>();
 

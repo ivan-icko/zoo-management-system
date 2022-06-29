@@ -12,33 +12,34 @@ using ZooloskiVrt.Server.Repozitorujum;
 
 namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
 {
-    public class PronadjiZivotinjePom : PronadjiZivotinjeSO
+    public class VratiZivotinjeZaPaketePom : VratiZivotinjeZaPaketeSO
     {
-        public PronadjiZivotinjePom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
+        public VratiZivotinjeZaPaketePom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
         {
             this.repozitorijum = (IRepozitorijum<IDomenskiObjekat>)mockRepository;
         }
     }
 
-    public class PronadjiZivotinjeSOTests
+    public class VratiSveZivotinjeZaPaketeSOTests
     {
         [Fact]
-        public void PronadjiZivotinju_Ok_Fact()
+        public void VratiSveZivotinjeZaPakete_Ok_Fact()
         {
             using (var mock = AutoMock.GetLoose())
             {
-                Zivotinja z = new Zivotinja() { Staniste="Evropa"};
+                Zivotinja z = new Zivotinja();
+
                 mock.Mock<IRepozitorijum<IDomenskiObjekat>>()
-                    .Setup(x => x.Pretrazi(z))
+                    .Setup(x => x.VratiSve(z))
                     .Returns(GetZivotinje().OfType<IDomenskiObjekat>().ToList());
 
 
-                PronadjiZivotinjeSO cls = new PronadjiZivotinjePom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
-                
+                VratiZivotinjeZaPaketeSO cls = new VratiZivotinjeZaPaketePom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
+
 
                 var expected = GetZivotinje();
-                cls.Z = z;
-                var actual = cls.VratiZivotinje();
+                cls.zivotinja = z;
+                var actual = cls.VratiSveZivotinjeZaPakete();
 
 
                 Assert.True(actual != null);
@@ -54,11 +55,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
             {
                 new Zivotinja()
                 {
-                    Vrsta="Lav",
-                    Staniste="Afrika",
-                    Starost=123,
-                    TipIshrane=TipIshrane.Mesojed,
-                    Pol=Pol.Muski
+                   Vrsta="Zebra"
                 }
             };
         }

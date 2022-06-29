@@ -31,7 +31,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         {
             try
             {
-                Zivotinje = repozitorijum.Pretrazi(new Zivotinja()).OfType<Zivotinja>().ToList();
+                Zivotinje = repozitorijum.Pretrazi(Z).OfType<Zivotinja>().ToList();
             }
             catch (Exception ex)
             {
