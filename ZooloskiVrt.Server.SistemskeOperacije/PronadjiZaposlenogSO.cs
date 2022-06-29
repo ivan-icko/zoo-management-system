@@ -14,16 +14,28 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         
         
         public Zaposleni Zaposleni { get; set; }
+        public List<Zaposleni> ZaposleniList = new List<Zaposleni>();
         public PronadjiZaposlenogSO(Zaposleni z)
         {
             Zaposleni = z;
 
         }
+        public PronadjiZaposlenogSO() : base()
+        {
+
+        }
+
+        public List<Zaposleni> VratiZaposlenog()
+        {
+            Izvrsi();
+            return ZaposleniList;
+        }
+
         protected override void Izvrsi()
         {
             try
             {
-                Zaposleni = (repozitorijum.Pretrazi(Zaposleni).OfType<Zaposleni>().ToList()).SingleOrDefault();
+                ZaposleniList = (repozitorijum.Pretrazi(new Zaposleni()).OfType<Zaposleni>().ToList());
             }
             catch (Exception ex)
             {

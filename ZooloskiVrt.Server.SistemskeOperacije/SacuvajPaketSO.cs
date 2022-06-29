@@ -9,11 +9,20 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
 {
     public class SacuvajPaketSO : OpstaSistemskaOperacija
     {
-        private Paket p;
+        public Paket p=new Paket();
         public bool Signal { get; set; } = true;
         public SacuvajPaketSO(Paket p)
         {
             this.p = p;
+        }
+        public SacuvajPaketSO():base()
+        {
+
+        }
+
+        public void Test()
+        {
+            Izvrsi();
         }
 
         protected override void Izvrsi()

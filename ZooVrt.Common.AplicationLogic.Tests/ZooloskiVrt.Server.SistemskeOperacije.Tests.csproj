@@ -107,8 +107,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AazurirajPaketSOTests.cs" />
+    <Compile Include="AzurirajZivotinjuSOTests.cs" />
+    <Compile Include="ObrisiZivotinjuSOTests.cs" />
+    <Compile Include="PronadjiPaketeSOTests.cs" />
     <Compile Include="PronadjiZaposlenogSOTests.cs" />
     <Compile Include="PronadjiZivotinjeSoTests.cs" />
+    <Compile Include="SacuvajPaketSOTests.cs" />
+    <Compile Include="SacuvajPrijavuSOTests.cs" />
+    <Compile Include="SacuvajZivotinjuSOTests.cs" />
     <Compile Include="VratiSvePaketeSOTests.cs" />
     <Compile Include="VratiSvePosetioceSOTests.cs" />
     <Compile Include="VratiSvePrijaveSOTests.cs" />

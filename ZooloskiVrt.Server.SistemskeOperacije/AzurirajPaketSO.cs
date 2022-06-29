@@ -9,11 +9,20 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
 {
     public class AzurirajPaketSO : OpstaSistemskaOperacija
     {
-        private Paket paket;
+        public Paket paket;
         public bool Signal { get; set; } = true;
         public AzurirajPaketSO(Paket paket)
         {
             this.paket = paket;
+        }
+        public AzurirajPaketSO() : base()
+        {
+
+        }
+
+        public void Test()
+        {
+            Izvrsi();  
         }
 
 

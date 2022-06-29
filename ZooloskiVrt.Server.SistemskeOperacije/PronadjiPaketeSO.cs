@@ -17,12 +17,26 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         {
             this.P = p;
         }
+
+        public PronadjiPaketeSO() : base()
+        {
+
+        }
+
+        public List<Paket> VratiPakete()
+        {
+            Izvrsi();
+            return Paketi;
+        }
+
+
+
         protected override void Izvrsi()
         {
 
             try
             {
-                Paketi = repozitorijum.Pretrazi(P).OfType<Paket>().ToList();
+                Paketi = repozitorijum.Pretrazi(new Paket()).OfType<Paket>().ToList();
             }
             catch (Exception ex)
             {

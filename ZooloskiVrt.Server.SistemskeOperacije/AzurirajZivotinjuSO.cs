@@ -15,6 +15,18 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         {
             Z = z;
         }
+
+        public AzurirajZivotinjuSO():base()
+        {
+
+        }
+
+        public void Test()
+        {
+            Izvrsi();
+        }
+
+
         protected override void Izvrsi()
         {
             try

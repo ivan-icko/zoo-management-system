@@ -12,51 +12,51 @@ using ZooloskiVrt.Server.Repozitorujum;
 
 namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
 {
-    public class PronadjiZaposlenogPom : PronadjiZaposlenogSO
+    public class PronadjiPaketePom : PronadjiPaketeSO
     {
-        public PronadjiZaposlenogPom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
+        public PronadjiPaketePom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
         {
             this.repozitorijum = (IRepozitorijum<IDomenskiObjekat>)mockRepository;
         }
     }
 
-    public class PronadjiZaposlenogSOTests
+    public class PronadjiPaketeSOTests
     {
         [Fact]
-        public void PronadjiZaposlenog_Ok_Fact()
+        public void PronadjiPakete_Ok_Fact()
         {
             using (var mock = AutoMock.GetLoose())
             {
                 mock.Mock<IRepozitorijum<IDomenskiObjekat>>()
-                    .Setup(x => x.Pretrazi(new Zaposleni()))
+                    .Setup(x => x.Pretrazi(new Paket()))
                     .Returns(GetZaposleni().OfType<IDomenskiObjekat>().ToList());
 
 
-                PronadjiZaposlenogSO cls = new PronadjiZaposlenogPom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
+                PronadjiPaketeSO cls = new PronadjiPaketePom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
 
 
                 var expected = GetZaposleni();
-                var actual = cls.VratiZaposlenog();
+                var actual = cls.VratiPakete();
 
 
                 Assert.True(actual != null);
-                
+
                 Assert.Equal(expected, actual);
             }
         }
 
 
-        private List<Zaposleni> GetZaposleni()
+        private List<Paket> GetZaposleni()
         {
 
-            return new List<Zaposleni>()
+            return new List<Paket>()
             {
-                new Zaposleni()
+                new Paket()
                 {
-                    Sifra="isdf"
+                    NazivPaketa="Paket1"
                 }
             };
-            
+
         }
 
 

@@ -9,11 +9,21 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
 {
     public class SacuvajPrijavuSO : OpstaSistemskaOperacija
     {
-        private Prijava prijava;
+        public Prijava prijava;
         public bool Signal { get; set; } = true;
         public SacuvajPrijavuSO(Prijava prijava)
         {
             this.prijava = prijava;
+        }
+
+        public SacuvajPrijavuSO():base()
+        {
+
+        }
+
+        public void Test()
+        {
+            Izvrsi();
         }
 
         protected override void Izvrsi()
