@@ -10,7 +10,20 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
 {
     public abstract class OpstaSistemskaOperacija
     {
-        protected IRepozitorijum<IDomenskiObjekat> repozitorijum = new GenerickiRepozitorujum();
+        protected IRepozitorijum<IDomenskiObjekat> repozitorijum;
+
+
+        //public OpstaSistemskaOperacija(IRepozitorijum<IDomenskiObjekat> repozitorijum)
+        //{
+        //    this.repozitorijum = repozitorijum;
+        //}
+
+
+        public OpstaSistemskaOperacija()
+        {
+            this.repozitorijum = new GenerickiRepozitorujum();
+        }
+
         public void IzvrsiTemplejt()
         {
             try

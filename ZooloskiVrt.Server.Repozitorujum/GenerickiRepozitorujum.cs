@@ -51,8 +51,8 @@ namespace ZooloskiVrt.Server.Repozitorujum
             }
         }
 
-        public List<IDomenskiObjekat> VratiSve(IDomenskiObjekat t)
-        {
+        public  List<IDomenskiObjekat> VratiSve(IDomenskiObjekat t)
+            {
             List<IDomenskiObjekat> rez = new List<IDomenskiObjekat>();
             SqlCommand command = broker.KreirajKomandu();
             command.CommandText = $"SELECT * FROM {t.NazivTabele} {t.JoinUslov} {t.Uslov}";
@@ -66,6 +66,7 @@ namespace ZooloskiVrt.Server.Repozitorujum
             }
             return rez;
         }
+
 
         public List<IDomenskiObjekat> Pretrazi(IDomenskiObjekat o)
         {
