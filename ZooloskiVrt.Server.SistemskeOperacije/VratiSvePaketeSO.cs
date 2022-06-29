@@ -11,6 +11,13 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
     {
         public List<Paket> Paketi { get; set; } = new List<Paket>();
 
+        public List<Paket> VratiSvePakete()
+        {
+            Izvrsi();
+            return Paketi;
+        }
+
+
         protected override void Izvrsi()
         {
             try

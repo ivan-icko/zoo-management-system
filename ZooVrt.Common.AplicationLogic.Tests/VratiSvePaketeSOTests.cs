@@ -12,31 +12,31 @@ using ZooloskiVrt.Server.Repozitorujum;
 
 namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
 {
-    public class VratiSveZivotinjePom : VratiSveZivotinjeSO
+    public class VratiSvePaketeSOPom : VratiSvePaketeSO
     {
-        public VratiSveZivotinjePom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
+        public VratiSvePaketeSOPom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
         {
             this.repozitorijum = (IRepozitorijum<IDomenskiObjekat>)mockRepository;
         }
     }
 
-    public class VratiSveZivotinjeTests
+    public class VratiSvePaketeTests
     {
         [Fact]
-        public void VratiSveZivotinje_Ok_Fact()
+        public void VratiSvePakete_Ok_Fact()
         {
             using (var mock = AutoMock.GetLoose())
             {
                 mock.Mock<IRepozitorijum<IDomenskiObjekat>>()
-                    .Setup(x => x.VratiSve(new Zivotinja()))
+                    .Setup(x => x.VratiSve(new Paket()))
                     .Returns(GetZivotinje().OfType<IDomenskiObjekat>().ToList());
 
                 
-                VratiSveZivotinjeSO cls = new VratiSveZivotinjePom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
+                VratiSvePaketeSO cls = new VratiSvePaketeSOPom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
                 
 
                 var expected = GetZivotinje();
-                var actual = cls.VratiSveZivotinje();
+                var actual = cls.VratiSvePakete();
 
 
                 Assert.True(actual != null);
@@ -46,17 +46,13 @@ namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
         }
 
 
-        private List<Zivotinja> GetZivotinje()
+        private List<Paket> GetZivotinje()
         {
-            return new List<Zivotinja>()
+            return new List<Paket>()
             {
-                new Zivotinja()
+                new Paket()
                 {
-                    Vrsta="Lav",
-                    Staniste="Afrika",
-                    Starost=123,
-                    TipIshrane=TipIshrane.Mesojed,
-                    Pol=Pol.Muski
+                    NazivPaketa="Paket1"
                 }
             };
         }

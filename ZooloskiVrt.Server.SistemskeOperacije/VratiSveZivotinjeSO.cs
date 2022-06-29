@@ -10,16 +10,6 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
 {
     public class VratiSveZivotinjeSO : OpstaSistemskaOperacija
     {
-        /*public VratiSveZivotinjeSO():base()
-        {
-            
-        }
-
-        public VratiSveZivotinjeSO(IRepozitorijum<IDomenskiObjekat> repozitorijum ):base(repozitorijum)
-        {
-            
-        }*/
-
         public List<Zivotinja> Zivotinje { get; set; } = new List<Zivotinja>();
 
         public  List<Zivotinja> VratiSveZivotinje()

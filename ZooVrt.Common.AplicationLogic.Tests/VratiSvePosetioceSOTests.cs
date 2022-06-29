@@ -10,17 +10,19 @@ using Moq;
 using Autofac.Extras.Moq;
 using ZooloskiVrt.Server.Repozitorujum;
 
-namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
+
+namespace ZooVrt.Common.AplicationLogic.Tests
 {
-    public class VratiSveZivotinjePom : VratiSveZivotinjeSO
+    public class VratiSvePosetioceSOPom : VratiSvePosetioceSO
     {
-        public VratiSveZivotinjePom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
+        public VratiSvePosetioceSOPom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
         {
             this.repozitorijum = (IRepozitorijum<IDomenskiObjekat>)mockRepository;
         }
     }
 
-    public class VratiSveZivotinjeTests
+
+    public class VratiSvePosetioceSOTests
     {
         [Fact]
         public void VratiSveZivotinje_Ok_Fact()
@@ -28,15 +30,15 @@ namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
             using (var mock = AutoMock.GetLoose())
             {
                 mock.Mock<IRepozitorijum<IDomenskiObjekat>>()
-                    .Setup(x => x.VratiSve(new Zivotinja()))
+                    .Setup(x => x.VratiSve(new Posetilac()))
                     .Returns(GetZivotinje().OfType<IDomenskiObjekat>().ToList());
 
-                
-                VratiSveZivotinjeSO cls = new VratiSveZivotinjePom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
-                
+
+                VratiSvePosetioceSO cls = new VratiSvePosetioceSOPom(mock.Create<IRepozitorijum<IDomenskiObjekat>>());
+
 
                 var expected = GetZivotinje();
-                var actual = cls.VratiSveZivotinje();
+                var actual = cls.VratiSvePosetioce();
 
 
                 Assert.True(actual != null);
@@ -46,17 +48,13 @@ namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
         }
 
 
-        private List<Zivotinja> GetZivotinje()
+        private List<Posetilac> GetZivotinje()
         {
-            return new List<Zivotinja>()
+            return new List<Posetilac>()
             {
-                new Zivotinja()
+                new Posetilac()
                 {
-                    Vrsta="Lav",
-                    Staniste="Afrika",
-                    Starost=123,
-                    TipIshrane=TipIshrane.Mesojed,
-                    Pol=Pol.Muski
+                  Email="icko@gmail.com"
                 }
             };
         }

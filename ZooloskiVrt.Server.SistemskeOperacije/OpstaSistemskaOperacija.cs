@@ -12,13 +12,6 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
     {
         protected IRepozitorijum<IDomenskiObjekat> repozitorijum;
 
-
-        //public OpstaSistemskaOperacija(IRepozitorijum<IDomenskiObjekat> repozitorijum)
-        //{
-        //    this.repozitorijum = repozitorijum;
-        //}
-
-
         public OpstaSistemskaOperacija()
         {
             this.repozitorijum = new GenerickiRepozitorujum();
