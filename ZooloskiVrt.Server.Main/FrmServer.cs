@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media.Imaging;
-
+using WpfApp1;
 
 namespace ZooloskiVrt.Server.Main
 {
@@ -61,6 +61,15 @@ namespace ZooloskiVrt.Server.Main
         {
             this.Dispose();
             Environment.Exit(0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MainWindow mw = new MainWindow();
+            this.Visible = false;
+            mw.ShowDialog();
+            this.Visible = true;
+
         }
     }
 }

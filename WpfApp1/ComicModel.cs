@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZooloskiVrt.Server.Main
+namespace ZooloskiVrt.Server.Maina
 {
     public class ComicModel
     {

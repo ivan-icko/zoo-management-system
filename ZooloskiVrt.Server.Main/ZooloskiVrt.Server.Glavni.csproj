@@ -98,6 +98,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WpfApp1\WpfApp1.csproj">
+      <Project>{1C7E4942-2FCC-4810-ADB7-36604E2CC928}</Project>
+      <Name>WpfApp1</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ZooloskiVrt.Common.Domen\ZooloskiVrt.Common.Domen.csproj">
       <Project>{BD156BC4-F940-475F-A4E9-0646AB1C0C7D}</Project>
       <Name>ZooloskiVrt.Common.Domen</Name>
