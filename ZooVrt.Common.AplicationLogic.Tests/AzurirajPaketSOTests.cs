@@ -12,14 +12,23 @@ using ZooloskiVrt.Server.Repozitorujum;
 
 namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
 {
+    /// <summary>
+    /// Pomocna klasa koja sluzi da se atribut repozitorijum inicijalizuje na mock repozitorijum
+    /// </summary>
     public class AzurirajPaketPom : AzurirajPaketSO
     {
+        /// <summary>
+        /// Konstruktor koji postavlja novu vrednost za atribut repozitorijum
+        /// </summary>
+        /// <param name="mockRepository">Lazni repozitorijum nastao pomocu Moq biblioteke</param>
         public AzurirajPaketPom(IRepozitorijum<IDomenskiObjekat> mockRepository) : base()
         {
             this.repozitorijum = (IRepozitorijum<IDomenskiObjekat>)mockRepository;
         }
     }
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class AzurirajPaketSOTests
     {
         [Fact]
