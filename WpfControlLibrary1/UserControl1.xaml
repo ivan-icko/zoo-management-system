@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfControlLibrary1.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfControlLibrary1"
+             mc:Ignorable="d" Loaded="UserControl_Loaded"
+             Title="Comics"
+             d:DesignHeight="950" d:DesignWidth="1200">
+    <Grid>
+        <Image Name="pic" HorizontalAlignment="Left" Height="940" Margin="18,10,-8,0" VerticalAlignment="Top" Width="1190"/>
+
+    </Grid>
+</Window>

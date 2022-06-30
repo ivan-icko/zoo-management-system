@@ -8,28 +8,17 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Media.Imaging;
-
 
 namespace ZooloskiVrt.Server.Main
 {
     public partial class FrmServer : Form
     {
         private Server server;
-       
-
         public FrmServer()
         {
             InitializeComponent();
             
         }
-
-
-        
-
-
-
-
 
         private void btnPokreni_Click(object sender, EventArgs e)
         {
