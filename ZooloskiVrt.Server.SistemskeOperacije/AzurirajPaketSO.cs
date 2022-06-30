@@ -32,6 +32,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
 
             try
             {
+
                 repozitorijum.Azuriraj(paket);
                 try
                 {
