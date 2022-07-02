@@ -193,6 +193,11 @@ namespace ZooloskiVrt.Common.Domen
             return Email;
         }
 
+        /// <summary>
+        /// Equals metoda koja poredi dve instance klase Posetilac i to njihove id-eve
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>True ako su dva </returns>
         public override bool Equals(object obj)
         {
             return obj is Posetilac posetilac &&

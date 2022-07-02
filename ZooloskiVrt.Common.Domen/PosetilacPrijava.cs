@@ -232,6 +232,11 @@ namespace ZooloskiVrt.Common.Domen
             BrojOsoba = broj;
         }
 
+        /// <summary>
+        /// Equals metoda koja poredi dva objekta klase PosetilacPrijava
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>True ako je ImeIPrezime i NazivPaketa isti, false u suprotnom</returns>
         public override bool Equals(object obj)
         {
             return obj is PosetilacPrijava prijava &&

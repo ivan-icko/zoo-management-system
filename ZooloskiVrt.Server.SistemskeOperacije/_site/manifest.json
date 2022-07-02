@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.AzurirajPaketSO.html",
-          "hash": "Bs2yKtb3R8+n/nFoeTTiyzFjbiclvj35atE/6oQhMiQ="
+          "hash": "R4SJGAGkQbS7pt/7I2a/+HPHsd145BQk6tvDPP+S9KU="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.AzurirajZivotinjuSO.html",
-          "hash": "PdLzxJ+f1j5shWICfViroJIPssbiiNUXbHTZze6BxGM="
+          "hash": "70aWjQ4wm+e77TNtEHMe2lkVfmS+7PvUb3Dvh7n8yXw="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.ObrisiZivotinjuSO.html",
-          "hash": "98j4Mr/odIfuEUQ6ETPNC3lmFzSUu1K6s+knBQ8E+3w="
+          "hash": "IpQ4gjK5UbG75u9shjRLQ67RbN0N8lkKgcDHK9H+Ppc="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.OpstaSistemskaOperacija.html",
-          "hash": "vHJb67dz8Di50Yd0BlVGERnbDlXSgCKMW38lu7pfKs8="
+          "hash": "XPh9xPIr0xUuYpDpnXKJOXVvqdcgcHGSE3MZblBiP2E="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.PronadjiPaketeSO.html",
-          "hash": "19bYDCkOfRTmGtmol+cHXeWpOkOejQDZ2g9nB8NyHIk="
+          "hash": "hKme8ROqzfV2qHwBzkKw/DpYrxWy5xeqvU6xbRHro1k="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.PronadjiZaposlenogSO.html",
-          "hash": "iIXZhBH23kktqhk25Ae6r6Ow1rSSgUjtijIgc+OOVOA="
+          "hash": "VGf569DS8k8d49HrD/1yQg9W4pp/etA3sFaSWFwOgG0="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.PronadjiZivotinjeSO.html",
-          "hash": "VEMTeenfTR9chKsfA2gSqg1zSlS9IaCuaLixneLz1pk="
+          "hash": "TwyxCmkp/VDGg5lAGXW1FVxsfCgR2+pJ7TpJNSkYXcM="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.SacuvajPaketSO.html",
-          "hash": "EG+PxMEPz8dp++5LDZKPRxI2ouxLbipiCBY/0ujA5eM="
+          "hash": "3zGb15FXzaniWSZFpSabbLlY3o2jC4cNp2vxcPSXZYg="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.SacuvajPrijavuSO.html",
-          "hash": "1koyZqbUw269EtWyLzMMtW+F7Kr12T+GBnLbizPokxs="
+          "hash": "PLB85GMYlF5xwn7btsQcLjXlNkovYfpPENrhbbQTWGg="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.SacuvajZivotinjuSO.html",
-          "hash": "VYG8R2S3rmVIaWKHL+/xcL5KESXt8dMMcv8SlRHokpE="
+          "hash": "EXXq9fG8D1Y8ibNWOVPergKBMQ9xRWQd7Gawbawr8Lc="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePaketeSO.html",
-          "hash": "K/di+j/4SaQPPBQ977++6TIGboGurhqAuDgnZowMCcQ="
+          "hash": "70C1Wemk81Z6BBvZMQrI43z1PScOegeoY9lx4foc2y0="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePosetioceSO.html",
-          "hash": "Jn30b1ugA3Na/gZ21CjlLzHLwPUk/tZ3CdImzenDEhY="
+          "hash": "b9uo7cOqeYG8FVo90UMds1G4byx6zZHblTODvsdY5co="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePrijaveSO.html",
-          "hash": "nJmhEU8/SHaUJSugmDer3IMtpkiCA78OTWFpTNSYb0Y="
+          "hash": "Irv/ZOxfT09ZJ0gmlmAbcld4aDWkAjHK3QTbijoamBc="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePrijaveZaPosetioceSO.html",
-          "hash": "56v0Hxus5mztAzD7wpFhOeXEwSmLba0+voh8Jg/55jw="
+          "hash": "oFGYprO1KxbPzz+voHLLRujXseFNcMzavQ2YFbvG+/0="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.VratiSveZivotinjeSO.html",
-          "hash": "+mqNFPehaRU5PVETu1ELiBpbyDi6XkSkij/L22e+opg="
+          "hash": "qur5jcpgzIVCWRI8UPJ9yo5HoLrjiR0oWh0OCBpgMS8="
         }
       },
       "is_incremental": false,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.VratiZivotinjeZaPaketeSO.html",
-          "hash": "NBAARL110oQ80hGgjdQPzVAC6zPGpKvHO7wTNrRrM6k="
+          "hash": "c5iX2icbYS7vKmeEx+LFLfWhK8/k/SvdquDi+T5XjsU="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.html",
-          "hash": "q2G/q/Nx4Yu4Z560Vn8ne7IcAj3gZFq+eAKOwQ6nuM8="
+          "hash": "1192pk/TXTRnX7AVpov6kGUH/KPQjegkYYNHrTX3p+s="
         }
       },
       "is_incremental": false,

@@ -102,6 +102,25 @@ namespace UnitTestProject3
 
 
 
+        [Fact]
+        public void PosetilacEquals_Ok_Fact()
+        {
+            Posetilac p2 = new Posetilac() { IdPosetioca = 1 };
+
+            p.IdPosetioca = 1;
+
+            Assert.Equal(p, p2);
+        }
+
+        [Fact]
+        public void PosetilacNotEquals_Fact()
+        {
+            Posetilac p2 = new Posetilac() { IdPosetioca = 1 };
+
+            p.IdPosetioca = 2;
+
+            Assert.NotEqual(p, p2);
+        }
 
 
     }

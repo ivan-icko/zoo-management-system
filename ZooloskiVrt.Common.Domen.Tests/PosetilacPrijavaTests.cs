@@ -127,6 +127,27 @@ namespace UnitTestProject3
             Assert.Throws<ArgumentOutOfRangeException>(() => p.SetBrojOsoba(33));
         }
 
+        [Fact]
+        public void PosetilacPrijavaEquals_Ok_Fact()
+        {
+          PosetilacPrijava  p2 = new PosetilacPrijava() { ImeIPrezime = "Ivan Stepanovic", NazivPaketa = "Paket1" };
+
+            p.ImeIPrezime = "Ivan Stepanovic";
+            p.NazivPaketa = "Paket1";
+
+            Assert.Equal(p, p2);
+        }
+
+        [Fact]
+        public void PosetilacPrijavaNotEqual_Fact()
+        {
+            PosetilacPrijava p2 = new PosetilacPrijava() { ImeIPrezime = "Ivan Stepanovic", NazivPaketa = "Paket1" };
+
+            p.ImeIPrezime = "Ivan Ivic";
+            p.NazivPaketa = "Paket1";
+
+            Assert.NotEqual(p, p2);
+        }
 
 
     }

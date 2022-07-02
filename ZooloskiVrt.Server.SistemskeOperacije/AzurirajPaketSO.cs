@@ -56,7 +56,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         /// Nakon azuriranja paketa brise se red u tabeli PaketZivotinja, kako bi se <br/>
         /// potencijalno novi redovi dodali i pri tome ocuvala struktura baze
         /// </summary>
-        /// <exception cref="">U slucaju neuspelog azuriranja paketa</exception>
+        /// <exception cref="Exception">U slucaju neuspelog azuriranja paketa</exception>
         protected override void Izvrsi()
         {
 

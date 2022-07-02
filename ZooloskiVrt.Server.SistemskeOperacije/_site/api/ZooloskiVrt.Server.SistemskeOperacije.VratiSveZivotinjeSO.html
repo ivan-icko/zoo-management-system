@@ -73,7 +73,8 @@
   
   <h1 id="ZooloskiVrt_Server_SistemskeOperacije_VratiSveZivotinjeSO" data-uid="ZooloskiVrt.Server.SistemskeOperacije.VratiSveZivotinjeSO" class="text-break">Class VratiSveZivotinjeSO
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Klasa koja predstavlja sistemsku operaciju vracanja svih zivotinja iz baze</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -124,7 +125,7 @@
     <a href="https://github.com/ivan-icko/ZooloskiVrtNaprednoProgramiranje/new/master/apiSpec/new?filename=ZooloskiVrt_Server_SistemskeOperacije_VratiSveZivotinjeSO_Zivotinje.md&amp;value=---%0Auid%3A%20ZooloskiVrt.Server.SistemskeOperacije.VratiSveZivotinjeSO.Zivotinje%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ivan-icko/ZooloskiVrtNaprednoProgramiranje/blob/master/ZooloskiVrt.Server.SistemskeOperacije/VratiSveZivotinjeSO.cs/#L13">View Source</a>
+    <a href="https://github.com/ivan-icko/ZooloskiVrtNaprednoProgramiranje/blob/master/ZooloskiVrt.Server.SistemskeOperacije/VratiSveZivotinjeSO.cs/#L20">View Source</a>
   </span>
   <a id="ZooloskiVrt_Server_SistemskeOperacije_VratiSveZivotinjeSO_Zivotinje_" data-uid="ZooloskiVrt.Server.SistemskeOperacije.VratiSveZivotinjeSO.Zivotinje*"></a>
   <h4 id="ZooloskiVrt_Server_SistemskeOperacije_VratiSveZivotinjeSO_Zivotinje" data-uid="ZooloskiVrt.Server.SistemskeOperacije.VratiSveZivotinjeSO.Zivotinje">Zivotinje</h4>
@@ -145,7 +146,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">ZooloskiVrt.Common.Domen.Zivotinja</span>&gt;</td>
-        <td></td>
+        <td><p>Javni atribut Zivotinje koji predstavlja listu zivotinja iz baze</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -156,11 +158,13 @@
     <a href="https://github.com/ivan-icko/ZooloskiVrtNaprednoProgramiranje/new/master/apiSpec/new?filename=ZooloskiVrt_Server_SistemskeOperacije_VratiSveZivotinjeSO_Izvrsi.md&amp;value=---%0Auid%3A%20ZooloskiVrt.Server.SistemskeOperacije.VratiSveZivotinjeSO.Izvrsi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ivan-icko/ZooloskiVrtNaprednoProgramiranje/blob/master/ZooloskiVrt.Server.SistemskeOperacije/VratiSveZivotinjeSO.cs/#L22">View Source</a>
+    <a href="https://github.com/ivan-icko/ZooloskiVrtNaprednoProgramiranje/blob/master/ZooloskiVrt.Server.SistemskeOperacije/VratiSveZivotinjeSO.cs/#L38">View Source</a>
   </span>
   <a id="ZooloskiVrt_Server_SistemskeOperacije_VratiSveZivotinjeSO_Izvrsi_" data-uid="ZooloskiVrt.Server.SistemskeOperacije.VratiSveZivotinjeSO.Izvrsi*"></a>
   <h4 id="ZooloskiVrt_Server_SistemskeOperacije_VratiSveZivotinjeSO_Izvrsi" data-uid="ZooloskiVrt.Server.SistemskeOperacije.VratiSveZivotinjeSO.Izvrsi">Izvrsi()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Metoda koja je nasledjena od klase OpstaSistemskaOperacija.<br>
+U ovom slucaju uloga ove metode je da pozove sistemsku operaciju VratiSve(Zivotinje) <br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -168,16 +172,33 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="ZooloskiVrt.Server.SistemskeOperacije.OpstaSistemskaOperacija.html#ZooloskiVrt_Server_SistemskeOperacije_OpstaSistemskaOperacija_Izvrsi">OpstaSistemskaOperacija.Izvrsi()</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>U slucaju neuspelog vracanja zivotinja</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ivan-icko/ZooloskiVrtNaprednoProgramiranje/new/master/apiSpec/new?filename=ZooloskiVrt_Server_SistemskeOperacije_VratiSveZivotinjeSO_VratiSveZivotinje.md&amp;value=---%0Auid%3A%20ZooloskiVrt.Server.SistemskeOperacije.VratiSveZivotinjeSO.VratiSveZivotinje%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ivan-icko/ZooloskiVrtNaprednoProgramiranje/blob/master/ZooloskiVrt.Server.SistemskeOperacije/VratiSveZivotinjeSO.cs/#L15">View Source</a>
+    <a href="https://github.com/ivan-icko/ZooloskiVrtNaprednoProgramiranje/blob/master/ZooloskiVrt.Server.SistemskeOperacije/VratiSveZivotinjeSO.cs/#L27">View Source</a>
   </span>
   <a id="ZooloskiVrt_Server_SistemskeOperacije_VratiSveZivotinjeSO_VratiSveZivotinje_" data-uid="ZooloskiVrt.Server.SistemskeOperacije.VratiSveZivotinjeSO.VratiSveZivotinje*"></a>
   <h4 id="ZooloskiVrt_Server_SistemskeOperacije_VratiSveZivotinjeSO_VratiSveZivotinje" data-uid="ZooloskiVrt.Server.SistemskeOperacije.VratiSveZivotinjeSO.VratiSveZivotinje">VratiSveZivotinje()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Funkcija koja inicira izvrsavanje metode Izvrsi </p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -194,7 +215,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">ZooloskiVrt.Common.Domen.Zivotinja</span>&gt;</td>
-        <td></td>
+        <td><p>ZIvotinje iz baze podataka</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -209,7 +231,7 @@
                     <a href="https://github.com/ivan-icko/ZooloskiVrtNaprednoProgramiranje/new/master/apiSpec/new?filename=ZooloskiVrt_Server_SistemskeOperacije_VratiSveZivotinjeSO.md&amp;value=---%0Auid%3A%20ZooloskiVrt.Server.SistemskeOperacije.VratiSveZivotinjeSO%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ivan-icko/ZooloskiVrtNaprednoProgramiranje/blob/master/ZooloskiVrt.Server.SistemskeOperacije/VratiSveZivotinjeSO.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ivan-icko/ZooloskiVrtNaprednoProgramiranje/blob/master/ZooloskiVrt.Server.SistemskeOperacije/VratiSveZivotinjeSO.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

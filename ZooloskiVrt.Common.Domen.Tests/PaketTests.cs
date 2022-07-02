@@ -85,5 +85,38 @@ namespace UnitTestProject3
             Assert.Equal(datum, p.GetDatumDo());
         }
 
+
+        [Fact]
+        public void PaketEquals_Ok_Fact()
+        {
+            Paket p2 = new Paket() {IdPaketa=1,NazivPaketa="Paket1",
+            Cena=123,DatumDo=DateTime.Now};
+
+            p.IdPaketa = 1;
+           p.NazivPaketa = "Paket1";
+            p.Cena = 123;
+            p.DatumDo = DateTime.Now;
+
+            Assert.Equal(p, p2);
+        }
+
+        [Fact]
+        public void PaketNotEquals_Fact()
+        {
+            Paket p2 = new Paket()
+            {
+                IdPaketa = 1,
+                NazivPaketa = "Paket1",
+                Cena = 123,
+                DatumDo = DateTime.Now
+            };
+
+            p.IdPaketa = 1;
+            p.NazivPaketa = "Paket2";
+            p.Cena = 123;
+            p.DatumDo = DateTime.Now;
+
+            Assert.NotEqual(p, p2);
+        }
     }
 }
