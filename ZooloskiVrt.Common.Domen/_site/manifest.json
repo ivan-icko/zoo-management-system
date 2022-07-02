@@ -1,0 +1,258 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Ivan/Source/Repos/ZooloskiVrtNaprednoProgramiranje2/ZooloskiVrt.Common.Domen",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "NWcLrxY5NbBLQvILiptCGfsiaSJVNImoFLZUFNlj/cc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "N2QOPqOGl7ljExoAMqlQDcfDCYVJuA0aIiXp9w9p25w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "wcKiFYiQa6oF4mZayvi3p3/jX2moEqkt5fGMh/mK/C4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Common.Domen.IDomenskiObjekat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Common.Domen.IDomenskiObjekat.html",
+          "hash": "AXNoGINdiYwH/uwfAqdZAOrOcjYa2zQkx/DhNfIAvYA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Common.Domen.Paket.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Common.Domen.Paket.html",
+          "hash": "ksWXZIiI8uAesU/xhlj4+D6i2MXV7HL7XP/BhwR4p0g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Common.Domen.PaketZivotinja.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Common.Domen.PaketZivotinja.html",
+          "hash": "N+j+YeYjrtZpM828YCbIVzQb6qZ6rmIfsf1VGXFb/vc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Common.Domen.Pol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Common.Domen.Pol.html",
+          "hash": "LMofCunTwCHGXNJZNT849GsHaDpv96JYwPgx0eJiXK8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Common.Domen.Posetilac.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Common.Domen.Posetilac.html",
+          "hash": "TEgw2bgLqJh2gL+XSxxjkqp81YjBuVPjz3f5fk0vsRA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Common.Domen.PosetilacPrijava.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Common.Domen.PosetilacPrijava.html",
+          "hash": "SZjXf3JmqENE0weJDQSwmC2qafwOWLeCPSNqoeAlkeg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Common.Domen.Prijava.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Common.Domen.Prijava.html",
+          "hash": "c7/3W7ICiLqoWrGgShhPCYno7SWTVyd8Omu//So1A9Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Common.Domen.TipIshrane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Common.Domen.TipIshrane.html",
+          "hash": "lfzPXMnJGXWvpqLkK9f0YXYd9xsVrloQRVySpmAV3CE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Common.Domen.Zaposleni.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Common.Domen.Zaposleni.html",
+          "hash": "uzOc5cspBcM6lo/9JDq8MAfItXD9NmcoFdkak7sZyN8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Common.Domen.Zivotinja.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Common.Domen.Zivotinja.html",
+          "hash": "YJNXkk5R9za7EM+MzAvP5LSSCKze0bvzFE9oRIQ+5E0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Common.Domen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Common.Domen.html",
+          "hash": "eo5xEs9OGVPT51g+TxWRQbyXvqrFO6pjWkwINQMOiPc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "mml4oFTPrVcA84DARrKms9raTJglNQ2iuvg9fMTE7sY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Oa9PuD4E1hvZnCkVjUgzNBX6S00Zo5YilamTERTZo54="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 11,
+          "skipped_file_count": 10
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

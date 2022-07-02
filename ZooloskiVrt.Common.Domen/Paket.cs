@@ -73,9 +73,9 @@ namespace ZooloskiVrt.Common.Domen
         [Browsable(false)]
         public string Uslov { get; set; }
 
-        /// <summary>
+        /// <value>
         /// Sql upit za azuriranje podataka o paketu
-        /// </summary>
+        /// </value>
         [Browsable(false)]
         public string Azuriranje => $"NazivPaketa='{NazivPaketa}', Cena={Cena}, DatumDo='{DatumDo}'";
 

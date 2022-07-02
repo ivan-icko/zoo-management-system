@@ -1,0 +1,330 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Ivan/Source/Repos/ZooloskiVrtNaprednoProgramiranje2/ZooloskiVrt.Server.SistemskeOperacije",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "WzNB38EN4UHuZfJQ153hBKOx1pi5hoCUYmKaVJO3UXg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "b4syBVrM3jS4VRS2v51uD5FldnvMdOKcUDD+dGEraHw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "oUJPxN+zbkGn4MUZeoUHMBVvsGvgfjjQm90EHfzzdvI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.AzurirajPaketSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.AzurirajPaketSO.html",
+          "hash": "Bs2yKtb3R8+n/nFoeTTiyzFjbiclvj35atE/6oQhMiQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.AzurirajZivotinjuSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.AzurirajZivotinjuSO.html",
+          "hash": "PdLzxJ+f1j5shWICfViroJIPssbiiNUXbHTZze6BxGM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.ObrisiZivotinjuSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.ObrisiZivotinjuSO.html",
+          "hash": "98j4Mr/odIfuEUQ6ETPNC3lmFzSUu1K6s+knBQ8E+3w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.OpstaSistemskaOperacija.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.OpstaSistemskaOperacija.html",
+          "hash": "vHJb67dz8Di50Yd0BlVGERnbDlXSgCKMW38lu7pfKs8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.PronadjiPaketeSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.PronadjiPaketeSO.html",
+          "hash": "19bYDCkOfRTmGtmol+cHXeWpOkOejQDZ2g9nB8NyHIk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.PronadjiZaposlenogSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.PronadjiZaposlenogSO.html",
+          "hash": "iIXZhBH23kktqhk25Ae6r6Ow1rSSgUjtijIgc+OOVOA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.PronadjiZivotinjeSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.PronadjiZivotinjeSO.html",
+          "hash": "VEMTeenfTR9chKsfA2gSqg1zSlS9IaCuaLixneLz1pk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.SacuvajPaketSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.SacuvajPaketSO.html",
+          "hash": "EG+PxMEPz8dp++5LDZKPRxI2ouxLbipiCBY/0ujA5eM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.SacuvajPrijavuSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.SacuvajPrijavuSO.html",
+          "hash": "1koyZqbUw269EtWyLzMMtW+F7Kr12T+GBnLbizPokxs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.SacuvajZivotinjuSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.SacuvajZivotinjuSO.html",
+          "hash": "VYG8R2S3rmVIaWKHL+/xcL5KESXt8dMMcv8SlRHokpE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePaketeSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePaketeSO.html",
+          "hash": "K/di+j/4SaQPPBQ977++6TIGboGurhqAuDgnZowMCcQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePosetioceSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePosetioceSO.html",
+          "hash": "Jn30b1ugA3Na/gZ21CjlLzHLwPUk/tZ3CdImzenDEhY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePrijaveSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePrijaveSO.html",
+          "hash": "nJmhEU8/SHaUJSugmDer3IMtpkiCA78OTWFpTNSYb0Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePrijaveZaPosetioceSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePrijaveZaPosetioceSO.html",
+          "hash": "56v0Hxus5mztAzD7wpFhOeXEwSmLba0+voh8Jg/55jw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.VratiSveZivotinjeSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.VratiSveZivotinjeSO.html",
+          "hash": "+mqNFPehaRU5PVETu1ELiBpbyDi6XkSkij/L22e+opg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.VratiZivotinjeZaPaketeSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.VratiZivotinjeZaPaketeSO.html",
+          "hash": "NBAARL110oQ80hGgjdQPzVAC6zPGpKvHO7wTNrRrM6k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.html",
+          "hash": "q2G/q/Nx4Yu4Z560Vn8ne7IcAj3gZFq+eAKOwQ6nuM8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "xiXR09g66T8f9oqYuqZ3+IPzlzjDjiPSVMtI22YGAsA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Oa9PuD4E1hvZnCkVjUgzNBX6S00Zo5YilamTERTZo54="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 17,
+          "skipped_file_count": 16
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
