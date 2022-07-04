@@ -1,11 +1,12 @@
 ﻿using Xunit;
 using System;
 using ZooloskiVrt.Common.Domen;
+using ZooloskiVrt.Common.Domen.Tests;
 
 namespace UnitTestProject3
 {
 
-    public class PrijavaTests
+    public class PrijavaTests:IDomenskiObjekatTests
     {
         public readonly Prijava p;
         public PrijavaTests()
@@ -72,6 +73,18 @@ namespace UnitTestProject3
             Assert.Equal(3, p.GetBrojOsoba());
         }
 
+
+        [Fact]
+        public void ProcitajRed_Fact()
+        {
+            ido = new Prijava()
+            {
+                IdPaketa=1,
+                IdPosetioca=1
+            };
+            ProcitajRedTest();
+            Assert.Equal(ido, rez);
+        }
 
     }
 }

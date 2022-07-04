@@ -46,7 +46,7 @@ namespace ZooloskiVrt.Common.Domen
         /// Naziv tabele u bazi podataka
         /// </value>
         [Browsable(false)]
-        public string NazivTabele =>"PosetilacPrijava";
+        public string NazivTabele => "PosetilacPrijava";
 
         /// <value>
         /// Vrednosti atributa klase koji se dematerijalizuju u kolone baze
@@ -58,7 +58,7 @@ namespace ZooloskiVrt.Common.Domen
         /// Naziv kolona ove klase u bazi podataka
         /// </value>
         [Browsable(false)]
-        public string Kolone =>"ImeIPrezime,NazivPaketa,Telefon,Email,BrojOsoba,Datum";
+        public string Kolone => "ImeIPrezime,NazivPaketa,Telefon,Email,BrojOsoba,Datum";
 
         /// <value>
         /// Where uslov sql upita
@@ -88,6 +88,8 @@ namespace ZooloskiVrt.Common.Domen
 
         }
 
+
+        
         /// <summary>
         /// Funkcija koja cita jedan red iz tabele PosetilacPrijava baze podataka
         /// </summary>
@@ -98,14 +100,14 @@ namespace ZooloskiVrt.Common.Domen
             PosetilacPrijava pp = new PosetilacPrijava()
             {
                 ImeIPrezime = (string)reader["ImeIPrezime"],
-                NazivPaketa=(string)reader["NazivPaketa"],
+                NazivPaketa = (string)reader["NazivPaketa"],
                 Telefon = (string)reader["Telefon"],
                 Email = (string)reader["Email"],
-                BrojOsoba = (int)reader["BrojOsoba"],
-                Datum = (DateTime)reader["DatumPrijave"]
+                BrojOsoba = (int)reader["BrojOsoba"]
             };
             return pp;
-        }
+        
+    }
         /// <summary>
         /// Funkcija koja postavlja ime i prezime
         /// </summary>

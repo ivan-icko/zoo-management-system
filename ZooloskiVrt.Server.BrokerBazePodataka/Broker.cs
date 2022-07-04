@@ -16,6 +16,10 @@ namespace ZooloskiVrt.Server.BrokerBazePodataka
         {
             connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ZooloskiVrt;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         }
+        public Broker(SqlConnection connection)
+        {
+            this.connection = connection;
+        }
         
         public void OtvoriKonekciju()
         {
@@ -39,7 +43,8 @@ namespace ZooloskiVrt.Server.BrokerBazePodataka
         }
         public SqlCommand KreirajKomandu()
         {
-            return new SqlCommand("", connection, transaction);
+            SqlCommand c = new SqlCommand("", connection, transaction);
+            return c;
         }
     }
 }

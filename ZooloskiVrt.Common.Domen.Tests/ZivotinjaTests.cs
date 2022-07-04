@@ -1,11 +1,12 @@
 ﻿using Xunit;
 using System;
 using ZooloskiVrt.Common.Domen;
+using ZooloskiVrt.Common.Domen.Tests;
 
 namespace UnitTestProject3
 {
     
-    public class ZivotinjaTests
+    public class ZivotinjaTests : IDomenskiObjekatTests
     {
         public readonly Zivotinja z;
 
@@ -105,6 +106,17 @@ namespace UnitTestProject3
             Assert.Throws<ArgumentOutOfRangeException>(() => z.SetStarost(-1));
         }
 
+
+        [Fact]
+        public void ProcitajRed_Fact()
+        {
+            ido = new Zivotinja()
+            {
+                IdZivotinje = 1
+            };
+            ProcitajRedTest();
+            Assert.Equal(ido, rez);
+        }
 
     }
 }

@@ -1,11 +1,12 @@
 ﻿using Xunit;
 using System;
 using ZooloskiVrt.Common.Domen;
+using ZooloskiVrt.Common.Domen.Tests;
 
 namespace UnitTestProject3
 {
     
-    public class PosetilacTests
+    public class PosetilacTests:IDomenskiObjekatTests
     {
         private readonly Posetilac p;
         public PosetilacTests()
@@ -122,6 +123,15 @@ namespace UnitTestProject3
             Assert.NotEqual(p, p2);
         }
 
-
+        [Fact]
+        public void ProcitajRed_Fact()
+        {
+            ido = new Posetilac()
+            {
+                IdPosetioca=1
+            };
+            ProcitajRedTest();
+            Assert.Equal(ido, rez);
+        }
     }
 }

@@ -1,11 +1,12 @@
 ﻿using Xunit;
 using System;
 using ZooloskiVrt.Common.Domen;
+using ZooloskiVrt.Common.Domen.Tests;
 
 namespace UnitTestProject3
 {
     
-    public class ZaposleniTests
+    public class ZaposleniTests:IDomenskiObjekatTests
     {
         public readonly Zaposleni z;
 
@@ -129,6 +130,16 @@ namespace UnitTestProject3
         }
 
 
+        [Fact]
+        public void ProcitajRed_Fact()
+        {
+            ido = new Zaposleni()
+            {
+                IdZaposlenog=1
+            };
+            ProcitajRedTest();
+            Assert.Equal(ido, rez);
+        }
 
 
 

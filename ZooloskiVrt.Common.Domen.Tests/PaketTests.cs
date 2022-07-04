@@ -1,12 +1,12 @@
 ﻿using System;
 using ZooloskiVrt.Common.Domen;
 using Xunit;
-
+using ZooloskiVrt.Common.Domen.Tests;
 
 namespace UnitTestProject3
 {
     
-    public class PaketTests
+    public class PaketTests:IDomenskiObjekatTests
     {
         private readonly Paket p;
 
@@ -117,6 +117,21 @@ namespace UnitTestProject3
             p.DatumDo = DateTime.Now;
 
             Assert.NotEqual(p, p2);
+        }
+
+        [Fact]
+        public void ProcitajRed_Fact()
+        {
+            string datum = "12/12/2022";
+            ido = new Paket()
+            {
+                IdPaketa = 1,
+                NazivPaketa = "Paket111",
+                Cena = 3334,
+                DatumDo = DateTime.Parse(datum)
+            };
+            ProcitajRedTest();
+            Assert.Equal(ido, rez);
         }
     }
 }

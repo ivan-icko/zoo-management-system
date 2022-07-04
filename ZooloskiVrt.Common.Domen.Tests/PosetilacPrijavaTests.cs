@@ -1,11 +1,12 @@
 ﻿using Xunit;
 using System;
 using ZooloskiVrt.Common.Domen;
+using ZooloskiVrt.Common.Domen.Tests;
 
 namespace UnitTestProject3
 {
     
-    public class PosetilacPrijavaTests
+    public class PosetilacPrijavaTests:IDomenskiObjekatTests
     {
         public readonly PosetilacPrijava p;
 
@@ -149,6 +150,17 @@ namespace UnitTestProject3
             Assert.NotEqual(p, p2);
         }
 
+        [Fact]
+        public void ProcitajRed_Fact()
+        {
+            ido = new PosetilacPrijava()
+            {
+                NazivPaketa="Paket1",
+                ImeIPrezime="Ivan Stepanovic"
+            };
+            ProcitajRedTest();
+            Assert.Equal(ido, rez);
+        }
 
     }
 }

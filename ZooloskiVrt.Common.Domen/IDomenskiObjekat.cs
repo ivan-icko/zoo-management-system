@@ -44,5 +44,7 @@ namespace ZooloskiVrt.Common.Domen
         /// <param name="rezultat">Predstavlja red baze podataka</param>
         /// <returns>IdomenskiObjekat koji se konvertuje u odgovarajuci objekat klase</returns>
         IDomenskiObjekat ProcitajRed(SqlDataReader rezultat);
+
+       
     }
 }
