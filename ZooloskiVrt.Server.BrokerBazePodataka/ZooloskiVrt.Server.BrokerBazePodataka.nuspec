@@ -3,12 +3,12 @@
   <metadata>
     <id>1</id>
     <version>1.0.0</version>
-    <title>Domenske klase</title>
+    <title>Komunikacija</title>
     <authors>Ivan Stepanovic</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">FON</license>
     <!-- <icon>icon.png</icon> -->
-    <description>$description$</description>
+    <description>Broker baze podataka</description>
     <releaseNotes>Prvo kreiranje paketa.</releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>Tag 1</tags>
