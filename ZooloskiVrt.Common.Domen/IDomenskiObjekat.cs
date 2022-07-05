@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace ZooloskiVrt.Common.Domen
 {
+    /// <summary>
+    /// Interfejs u cijem sastavu se nalaze propertiji i metoda koju nasledjuju sve klase koje pripadaju domenu zooloskog vrta
+    /// </summary>
     public interface IDomenskiObjekat
     {
         /// <value>
