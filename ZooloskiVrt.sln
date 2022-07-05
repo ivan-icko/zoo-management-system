@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooloskiVrt.Server.Glavni", "ZooloskiVrt.Server.Main\ZooloskiVrt.Server.Glavni.csproj", "{E15F1DB1-3868-4CD4-9CAA-795C3385BBCA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooloskiVrt.Server.Main", "ZooloskiVrt.Server.Main\ZooloskiVrt.Server.Main.csproj", "{E15F1DB1-3868-4CD4-9CAA-795C3385BBCA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooloskiVrt.Server.SistemskeOperacije", "ZooloskiVrt.Server.SistemskeOperacije\ZooloskiVrt.Server.SistemskeOperacije.csproj", "{FCD647F6-6ABB-4777-9E40-76B2825F9AB5}"
 EndProject

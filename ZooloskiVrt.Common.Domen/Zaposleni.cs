@@ -8,31 +8,87 @@ using System.Threading.Tasks;
 
 namespace ZooloskiVrt.Common.Domen
 {
+    /// <summary>
+    /// Klasa koja predstavlja zaposlenog u zoo vrtu
+    /// </summary>
     [Serializable]
     public class Zaposleni : IDomenskiObjekat
     {
+        /// <value>
+        /// Identifikator zaposlenog
+        /// </value>
         public int IdZaposlenog { get; set; }
+        /// <value>
+        /// Ime zaposlenog
+        /// </value>
         public string Ime { get; set; }
+        /// <value>
+        /// Prezime zaposlenog
+        /// </value>
         public string Prezime { get; set; }
+        /// <value>
+        /// Korisnicko ime zaposlenog
+        /// </value>
         public string KorisnickoIme { get; set; }
+        /// <value>
+        /// Sifra zaposlenog
+        /// </value>
         public string Sifra { get; set; }
 
+        /// <summary>
+        /// Besparametarski konstruktor klase Zaposleni
+        /// </summary>
         public Zaposleni() { }
+
+        /// <value>
+        /// Naziv tabele u bazi
+        /// </value>
         [Browsable(false)]
         public string NazivTabele => "Zaposleni";
+
+        /// <value>
+        /// Vrednosti atributa klase Zaposleni koje ulaze u obzir u sql upitima
+        /// </value>
         [Browsable(false)]
         public string Vrednosti => $"{Ime},{Prezime},{KorisnickoIme},{Sifra}";
+
+        /// <value>
+        /// Uslov u where klauzuli pri izvrsavanju sql upita
+        /// </value>
         [Browsable(false)]
         public string Uslov { get; set; }
+
+        /// <value>
+        /// Nazivi kolona odgovarajucih atributa u bazi podataka
+        /// </value>
         [Browsable(false)]
         public string Kolone => "(Ime,Prezime,KorisnickoIme,Sifra)";
 
+        /// <value>
+        /// Sql upit za azuriranje podataka o prijavi
+        /// </value>
         public string Azuriranje { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
+        /// <value>
+        /// Uslov koji se postavlja u slucaju da je neophodno <br/>
+        /// izvrsiti spajanje dve ili vise tabela
+        /// </value>
         public string JoinUslov { get; set; }
+
+        /// <value>
+        /// Vrednost atributa klase Zaposleni, koji predstavlja <br/>
+        /// primarni kljuc u bazi podataka
+        /// </value>
         [Browsable(false)]
         public string IdKolona { get; } 
 
+        /// <summary>
+        /// Parametarski konsturktor
+        /// </summary>
+        /// <param name="ime">ime zaposlenog</param>
+        /// <param name="prezime">prezime zaposlenog</param>
+        /// <param name="korisnickoIme">korisnicko ime</param>
+        /// <param name="sifra">korisnicka sifra</param>
         public Zaposleni(string ime, string prezime, string korisnickoIme, string sifra)
         {
             KorisnickoIme = korisnickoIme;
@@ -44,6 +100,12 @@ namespace ZooloskiVrt.Common.Domen
             this.Uslov = $"Ime like '{ime}' and Prezime like '{prezime}' and KorisnickoIme like '{korisnickoIme}' and Sifra like '{sifra}'";
         }
 
+
+        /// <summary>
+        /// Funkcija koja cita jedan red iz tabele Zaposleni baze podataka
+        /// </summary>
+        /// <param name="reader">objekat klase SqlDataReader koji cita red</param>
+        /// <returns>Zaposleni koji je materijalizovan iz baze</returns>
         public IDomenskiObjekat ProcitajRed(SqlDataReader reader)
         {
             Zaposleni z = new Zaposleni()
@@ -57,6 +119,13 @@ namespace ZooloskiVrt.Common.Domen
             return z;
         }
 
+
+        /// <summary>
+        /// Metoda koja poredi da li su dva objekta klase Zaposleni jednaka <br/>
+        /// Ako imaju isti IdZaposlenog onda su jednaka
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>true ukoliko su jednaka, false ukoliko nisu</returns>
         public override bool Equals(object obj)
         {
             return obj is Zaposleni zaposleni &&
@@ -67,7 +136,7 @@ namespace ZooloskiVrt.Common.Domen
         /// Metoda koja postavlja id zaposlenog
         /// </summary>
         /// <param name="id">Id zaposlenog</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException">Ako je id zaposlenog manji od 1</exception>
         public void SetIdZaposlenog(int id)
         {
             if (id < 0)

@@ -89,13 +89,14 @@ namespace UnitTestProject3
         [Fact]
         public void PaketEquals_Ok_Fact()
         {
+            string date = "12/12/2021";
             Paket p2 = new Paket() {IdPaketa=1,NazivPaketa="Paket1",
-            Cena=123,DatumDo=DateTime.Now};
+            Cena=123,DatumDo=Convert.ToDateTime(date)};
 
             p.IdPaketa = 1;
            p.NazivPaketa = "Paket1";
             p.Cena = 123;
-            p.DatumDo = DateTime.Now;
+            p.DatumDo = Convert.ToDateTime(date);
 
             Assert.Equal(p, p2);
         }

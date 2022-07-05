@@ -83,6 +83,9 @@ namespace ZooloskiVrt.Common.Domen
         [Browsable(false)]
         public string IdKolona { get; } = "IdPosetilac";
 
+        /// <summary>
+        /// Besparametarski konsturktor klase Posetilac prijava
+        /// </summary>
         public PosetilacPrijava()
         {
 
@@ -112,6 +115,8 @@ namespace ZooloskiVrt.Common.Domen
         /// Funkcija koja postavlja ime i prezime
         /// </summary>
         /// <param name="imeIPrezime">Ime i prezime</param>
+        /// <exception cref="ArgumentException">Kada su ime i prezime prazni stringovi</exception>
+        /// <exception cref="ArgumentNullException">Kada su ime i prezime null</exception>
         public void SetImeIPrezime(string imeIPrezime)
         {
             if (imeIPrezime == null)
@@ -141,6 +146,8 @@ namespace ZooloskiVrt.Common.Domen
         /// Funkcija koja postavlja naziv paketa
         /// </summary>
         /// <param name="naziv">Naziv paketa</param>
+        /// <exception cref="ArgumentException">Kada je naziv paketa prazan string</exception>
+        /// <exception cref="ArgumentNullException">Kada je naziv paketa null</exception>
         public void SetNazivPaketa(string naziv)
         {
             if (naziv == null)
@@ -169,6 +176,8 @@ namespace ZooloskiVrt.Common.Domen
         /// Funkcija koja postavlja telefon posetioca
         /// </summary>
         /// <param name="telefon">Telefon posetioca</param>
+        ///<exception cref="ArgumentException">Kada je telefon prazan string</exception>
+        /// <exception cref="ArgumentNullException">Kada je telefon null</exception>
         public void SetTelefon(string telefon)
         {
             if (telefon == null)
@@ -197,6 +206,8 @@ namespace ZooloskiVrt.Common.Domen
         /// Funkcija koja postavlja email posetioca
         /// </summary>
         /// <param name="email">Email posetioca</param>
+        /// <exception cref="ArgumentException">Kada je email prazan string</exception>
+        /// <exception cref="ArgumentNullException">Kada je email null</exception>
         public void SetEmail(string email)
         {
             if (email == null)
@@ -225,6 +236,7 @@ namespace ZooloskiVrt.Common.Domen
         /// Metoda koja vraca broj osoba koje se prijavljuju
         /// </summary>
         /// <param name="broj">Broj osoba</param>
+        /// /// <exception cref="ArgumentOutOfRangeException">Kada je broj osoba manji od 1</exception>
         public void SetBrojOsoba(int broj)
         {
             if (BrojOsoba < 1)
