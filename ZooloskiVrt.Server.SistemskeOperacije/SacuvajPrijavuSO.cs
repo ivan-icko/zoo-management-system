@@ -26,6 +26,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         /// <summary>
         /// Parametarski konstruktor klase SacuvajPrijavuSO, koji inicijalizuje prijavu za cuvanje
         /// </summary>
+        /// <param name="prijava">Prijava koju je potrebno sacuvati</param>
         public SacuvajPrijavuSO(Prijava prijava)
         {
             this.prijava = prijava;

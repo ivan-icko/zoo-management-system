@@ -26,6 +26,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         /// <summary>
         /// Parametarski konstruktor klase SacuvajPaketeSO, koji inicijalizuje pakete za cuvanje
         /// </summary>
+        /// <param name="p">Paket koji je potrebno sacuvati</param>
         public SacuvajPaketSO(Paket p)
         {
             this.p = p;
