@@ -124,7 +124,7 @@ namespace ZooloskiVrt.Common.Domen
         /// Metoda koja poredi da li su dva objekta klase Zaposleni jednaka <br/>
         /// Ako imaju isti IdZaposlenog onda su jednaka
         /// </summary>
-        /// <param name="obj"></param>
+        /// <param name="obj">Objekat klase zaposleni</param>
         /// <returns>true ukoliko su jednaka, false ukoliko nisu</returns>
         public override bool Equals(object obj)
         {

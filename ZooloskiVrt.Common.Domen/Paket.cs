@@ -35,9 +35,9 @@ namespace ZooloskiVrt.Common.Domen
         /// </value>
         public DateTime DatumDo { get; set; }
 
-        /// <value>
+        /// <summary>
         /// Bezparametarski konstruktor klase Paket
-        /// </value>
+        /// </summary>
         public Paket()
         {
 
@@ -86,10 +86,10 @@ namespace ZooloskiVrt.Common.Domen
         [Browsable(false)]
         public string JoinUslov { get; set;}
 
-        /// <summary>
+        /// <value>
         /// Vrednost atributa klase Paket, koji predstavlja <br/>
         /// primarni kljuc u bazi podataka
-        /// </summary>
+        /// </value>
         [Browsable(false)]
         public string IdKolona { get; } = "IdPaketa";
 
@@ -142,7 +142,7 @@ namespace ZooloskiVrt.Common.Domen
         /// Funkcija koja postavlja IdPaketa
         /// </summary>
         /// <param name="id">Id paketa</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException">Ako je id manji od 0</exception>
         public void SetIdPaketa(int id)
         {
             if (id <= 0)
@@ -157,8 +157,8 @@ namespace ZooloskiVrt.Common.Domen
         /// Funkcija koja postavlja naziv paketa
         /// </summary>
         /// <param name="naziv">Naziv paketa</param>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException">Ako je naziv null</exception>
+        /// <exception cref="ArgumentException">Ako je naziv prazan string</exception>
         public void SetNazivPaketa(string naziv)
         {
             if (naziv == null)
@@ -188,7 +188,7 @@ namespace ZooloskiVrt.Common.Domen
         /// Funkcija koja postavlja cenu paketa
         /// </summary>
         /// <param name="cena">Cena paketa</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException">Ako je cena manja od 0</exception>
         public void SetCena(double cena)
         {
             if (cena < 0)
@@ -211,7 +211,7 @@ namespace ZooloskiVrt.Common.Domen
         /// Funkcija koja postavlja datum paketu
         /// </summary>
         /// <param name="datum">Datum</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException">Ako je datum u proslosti</exception>
         public void SetdDatumDo(DateTime datum)
         {
            
@@ -234,8 +234,8 @@ namespace ZooloskiVrt.Common.Domen
         /// Metoda koja poredi da li su dva paketa jednaka <br/>
         /// Ako imaju isti id, cenu, datum i naziv, onda su jednaka
         /// </summary>
-        /// <param name="obj"></param>
-        /// <returns></returns>
+        /// <param name="obj">objekat klase Paket</param>
+        /// <returns>True ako su jednaki, ili false ako nisu</returns>
         public override bool Equals(object obj)
         {
             return obj is Paket paket &&

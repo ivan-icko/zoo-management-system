@@ -54,15 +54,15 @@ namespace ZooloskiVrt.Common.Domen
 
         
 
-        /// <summary>
+        /// <value>
         /// Neimplementiran property koji azurira instancu klase
-        /// </summary>
+        /// </value>
         public string Azuriranje => throw new NotImplementedException();
 
-        /// <summary>
+        /// <value>
         /// Sql upit koji se konstruise u slucaju potrebe za spajanjem tabela. <br/>
         /// Property je neimplementiran
-        /// </summary>
+        /// </value>
         public string JoinUslov { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         /// <value>
@@ -75,7 +75,7 @@ namespace ZooloskiVrt.Common.Domen
         /// Funkcija koja cita jedan red iz tabele PaketZivotinja baze podataka
         /// </summary>
         /// <param name="rezultat">rezultat</param>
-        /// <exception cref="NotImplementedException"></exception>
+        /// <exception cref="NotImplementedException">Neimplementirana metoda</exception>
         public IDomenskiObjekat ProcitajRed(SqlDataReader rezultat)
         {
             throw new NotImplementedException();
@@ -121,7 +121,7 @@ namespace ZooloskiVrt.Common.Domen
         /// <summary>
         /// Funkcija koja braca id paketa
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Id paketa</returns>
         public int GetIdPaketa()
         {
             return IdPaketa;

@@ -37,14 +37,14 @@ namespace ZooloskiVrt.Common.Domen
         /// </value>
         [Browsable(false)]
         public string NazivTabele => "Posetilac";
-        /// <summary>
+        /// <value>
         /// Vrednosti atributa klase koje se azuriraju u bazi podataka
-        /// </summary>
+        /// </value>
         [Browsable(false)]
         public string Vrednosti => $"{IdPosetioca},'{ImeIPrezime}','{Telefon}','{Email}'";
-        /// <summary>
+        /// <value>
         /// Nazivi kolona atributa u bazi podataka
-        /// </summary>
+        /// </value>
         [Browsable(false)]
         public string Kolone => "(IdPosetioca,ImeIPrezime,Telefon,Email)";
 
@@ -70,7 +70,9 @@ namespace ZooloskiVrt.Common.Domen
         [Browsable(false)]
         public string IdKolona { get; set; }
 
-
+        /// <summary>
+        /// Besparametarski konsturktor
+        /// </summary>
         public Posetilac() { }
 
       
@@ -169,7 +171,7 @@ namespace ZooloskiVrt.Common.Domen
         /// <summary>
         /// Metoda koja vraca email
         /// </summary>
-        /// <param name="email"></param>
+        /// <param name="email">Email</param>
         public void SetEmail(string email)
         {
             if (email == null)
@@ -196,8 +198,8 @@ namespace ZooloskiVrt.Common.Domen
         /// <summary>
         /// Equals metoda koja poredi dve instance klase Posetilac i to njihove id-eve
         /// </summary>
-        /// <param name="obj"></param>
-        /// <returns>True ako su dva </returns>
+        /// <param name="obj">Objekat klase Posetilac</param>
+        /// <returns>True ako su isti, false ako nisu </returns>
         public override bool Equals(object obj)
         {
             return obj is Posetilac posetilac &&

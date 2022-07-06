@@ -83,7 +83,7 @@ namespace ZooloskiVrt.Common.Domen
         /// Metoda koja poredi da li su dva objekta klase Prijava jednaka <br/>
         /// Ako imaju isti IdPaketa i IdPosetioca onda su jednaka
         /// </summary>
-        /// <param name="obj"></param>
+        /// <param name="obj">Objekat klase Prijava</param>
         /// <returns>true ukoliko su jednaka, false ukoliko nisu</returns>
         public override bool Equals(object obj)
         {
