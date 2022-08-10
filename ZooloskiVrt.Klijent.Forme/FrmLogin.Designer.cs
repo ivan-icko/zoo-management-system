@@ -37,7 +37,9 @@ namespace ZooloskiVrt.Klijent.Forme
             this.label3 = new System.Windows.Forms.Label();
             this.txtSifra = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -92,23 +94,36 @@ namespace ZooloskiVrt.Klijent.Forme
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtSifra);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(28, 41);
+            this.groupBox1.Location = new System.Drawing.Point(12, 208);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(360, 203);
+            this.groupBox1.Size = new System.Drawing.Size(308, 203);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Prijava na sistem";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ZooloskiVrt.Klijent.Forme.Properties.Resources.zooo;
+            this.pictureBox1.Location = new System.Drawing.Point(96, 34);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(141, 151);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(423, 262);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(332, 461);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmLogin";
             this.Text = "Prijava";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -120,6 +135,7 @@ namespace ZooloskiVrt.Klijent.Forme
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtSifra;
         private System.Windows.Forms.GroupBox groupBox1;
+        private PictureBox pictureBox1;
 
         public Button Button1 { get => button1; set => button1 = value; }
         public TextBox TxtKorisnickoIme { get => txtKorisnickoIme; set => txtKorisnickoIme = value; }

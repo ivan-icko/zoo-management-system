@@ -61,7 +61,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         {
             try
             {
-                Prijave = repozitorijum.VratiSve(new PosetilacPrijava()).OfType<PosetilacPrijava>().ToList();
+                Prijave = repozitorijum.VratiSve(pp).OfType<PosetilacPrijava>().ToList();
             }
             catch (Exception ex)
             {

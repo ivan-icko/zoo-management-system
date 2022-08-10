@@ -126,6 +126,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserControls\Paketi\UCDodajZivotinjuUPaket.resx">
       <DependentUpon>UCDodajZivotinjuUPaket.cs</DependentUpon>
@@ -161,7 +162,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\zooo.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ZooloskiVrt.Common.Domen\ZooloskiVrt.Common.Domen.csproj">
       <Project>{BD156BC4-F940-475F-A4E9-0646AB1C0C7D}</Project>

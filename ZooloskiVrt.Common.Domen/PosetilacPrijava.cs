@@ -46,7 +46,7 @@ namespace ZooloskiVrt.Common.Domen
         /// Naziv tabele u bazi podataka
         /// </value>
         [Browsable(false)]
-        public string NazivTabele => "PosetilacPrijava";
+        public string NazivTabele => "Posetilac";
 
         /// <value>
         /// Vrednosti atributa klase koji se dematerijalizuju u kolone baze
