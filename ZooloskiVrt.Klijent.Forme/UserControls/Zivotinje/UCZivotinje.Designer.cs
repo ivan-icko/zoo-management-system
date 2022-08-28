@@ -286,6 +286,8 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Zivotinje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.btnPrikazi);
             this.Controls.Add(this.btnPrikaziSve);

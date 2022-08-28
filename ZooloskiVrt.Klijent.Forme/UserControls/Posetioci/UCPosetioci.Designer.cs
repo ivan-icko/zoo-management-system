@@ -132,6 +132,7 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Posetioci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.txtBrojOsoba);
             this.Controls.Add(this.gb2);

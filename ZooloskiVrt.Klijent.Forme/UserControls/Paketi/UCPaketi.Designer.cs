@@ -228,7 +228,6 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             this.btnDodajZivotinju.TabIndex = 24;
             this.btnDodajZivotinju.Text = "Dodaj zivotinju";
             this.btnDodajZivotinju.UseVisualStyleBackColor = true;
-           
             // 
             // dgvDodajZivotinju
             // 
@@ -244,6 +243,8 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.dgvDodajZivotinju);
             this.Controls.Add(this.btnDodajZivotinju);
             this.Controls.Add(this.btnObrisiZivotinju);
