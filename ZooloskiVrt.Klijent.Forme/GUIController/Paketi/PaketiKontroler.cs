@@ -81,10 +81,21 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
         private bool ValidacijaPretrage()
         {
             double cenaPaketa = 0;
+            int brojSlobodnihMesta = 0;
             DateTime datumDo = new DateTime();
+            if (!string.IsNullOrEmpty(uc.TxtBrojSlobodnihMesta.Text))
+            {
+                if (!int.TryParse(uc.TxtBrojSlobodnihMesta.Text, out int broj) || broj<0)
+                {
+                    System.Windows.Forms.MessageBox.Show("Greska pri unosu cene");
+                    return false;
+                }
+                brojSlobodnihMesta = broj;
+            }
+
             if (!string.IsNullOrEmpty(uc.TxtCena.Text))
             {
-                if (!double.TryParse(uc.TxtCena.Text, out double cena) || cena<0)
+                if (!double.TryParse(uc.TxtCena.Text, out double cena) || cena < 0)
                 {
                     System.Windows.Forms.MessageBox.Show("Greska pri unosu cene");
                     return false;
@@ -101,13 +112,13 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
                 }
                 datumDo = datum;
             }
-            noviPaket = NapuniPaket(uc.TxtNazivPaketa.Text, cenaPaketa, datumDo);
+            noviPaket = NapuniPaket(uc.TxtNazivPaketa.Text, cenaPaketa, datumDo,brojSlobodnihMesta);
             return true;
         }
 
-        private Paket NapuniPaket(string naziv, double cena, DateTime datum)
+        private Paket NapuniPaket(string naziv, double cena, DateTime datum,int brojSlobodnihMesta)
         {
-            Paket p = new Paket(null, naziv, cena == 0 ? null : cena.ToString(), datum == new DateTime() ? null : datum.ToString("yyyy-MM-dd"),null);
+            Paket p = new Paket(null, naziv, cena == 0 ? null : cena.ToString(), datum == new DateTime() ? null : datum.ToString("yyyy-MM-dd"),brojSlobodnihMesta==0? null:brojSlobodnihMesta.ToString());
             return p;
         }
 
@@ -127,6 +138,7 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
             p.NazivPaketa = uc.TxtNazivPaketa.Text;
             p.Cena = double.Parse(uc.TxtCena.Text);
             p.DatumDo = DateTime.Parse(uc.TxtDatumDo.Text);
+            p.BrojSlobodnihMesta = int.Parse(uc.TxtBrojSlobodnihMesta.Text);
 
             foreach (var z in zivotinjeUPaketu)
             {
@@ -139,7 +151,7 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
 
         private bool ValidacijaAzuriranja()
         {
-            if (string.IsNullOrEmpty(uc.TxtCena.Text) || string.IsNullOrEmpty(uc.TxtDatumDo.Text) || string.IsNullOrEmpty(uc.TxtNazivPaketa.Text))
+            if (string.IsNullOrEmpty(uc.TxtCena.Text) || string.IsNullOrEmpty(uc.TxtDatumDo.Text) || string.IsNullOrEmpty(uc.TxtNazivPaketa.Text) || string.IsNullOrEmpty(uc.TxtBrojSlobodnihMesta.Text))
             {
                 System.Windows.Forms.MessageBox.Show("Sva polja su obavezna");
                 return false;
@@ -147,6 +159,11 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
             if (!double.TryParse(uc.TxtCena.Text, out double cena) || cena<0)
             {
                 System.Windows.Forms.MessageBox.Show("Greska pri unosu cene");
+                return false;
+            }
+            if (!int.TryParse(uc.TxtBrojSlobodnihMesta.Text, out int broj) || broj < 0)
+            {
+                System.Windows.Forms.MessageBox.Show("Greska pri unosu broja mesta");
                 return false;
             }
             if (!DateTime.TryParse(uc.TxtDatumDo.Text, out DateTime datum) || datum <= DateTime.Now)
@@ -167,6 +184,7 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
             uc.TxtCena.Text = "";
             uc.TxtDatumDo.Text = "";
             uc.TxtNazivPaketa.Text = "";
+            uc.TxtBrojSlobodnihMesta.Text = "";
             uc.DgvZivotinjeUPaketu.DataSource = null;
         }
 
@@ -205,6 +223,7 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
             uc.TxtCena.Text = izabraniPaket.Cena.ToString();
             uc.TxtDatumDo.Text = izabraniPaket.DatumDo.ToString("d");
             uc.TxtNazivPaketa.Text = izabraniPaket.NazivPaketa;
+            uc.TxtBrojSlobodnihMesta.Text = izabraniPaket.BrojSlobodnihMesta.ToString();
         }
 
         private void BtnDodajZivotinju_Click(object sender, EventArgs e)

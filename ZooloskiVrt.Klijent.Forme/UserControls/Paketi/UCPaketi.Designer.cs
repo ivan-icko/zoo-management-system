@@ -34,6 +34,8 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             this.btnPrikazi = new System.Windows.Forms.Button();
             this.btnPrikaziSve = new System.Windows.Forms.Button();
             this.gbPretraga = new System.Windows.Forms.GroupBox();
+            this.txtBrojSlobodnihMesta = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtDatumDo = new System.Windows.Forms.TextBox();
             this.txtCena = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -78,6 +80,8 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             // gbPretraga
             // 
             this.gbPretraga.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gbPretraga.Controls.Add(this.txtBrojSlobodnihMesta);
+            this.gbPretraga.Controls.Add(this.label3);
             this.gbPretraga.Controls.Add(this.txtDatumDo);
             this.gbPretraga.Controls.Add(this.txtCena);
             this.gbPretraga.Controls.Add(this.label6);
@@ -95,10 +99,28 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             this.gbPretraga.TabStop = false;
             this.gbPretraga.Text = "Paket";
             // 
+            // txtBrojSlobodnihMesta
+            // 
+            this.txtBrojSlobodnihMesta.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBrojSlobodnihMesta.Location = new System.Drawing.Point(181, 136);
+            this.txtBrojSlobodnihMesta.Name = "txtBrojSlobodnihMesta";
+            this.txtBrojSlobodnihMesta.Size = new System.Drawing.Size(121, 22);
+            this.txtBrojSlobodnihMesta.TabIndex = 22;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(31, 136);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(144, 17);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Broj slobodnih mesta:";
+            // 
             // txtDatumDo
             // 
             this.txtDatumDo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDatumDo.Location = new System.Drawing.Point(152, 101);
+            this.txtDatumDo.Location = new System.Drawing.Point(181, 95);
             this.txtDatumDo.Name = "txtDatumDo";
             this.txtDatumDo.Size = new System.Drawing.Size(121, 22);
             this.txtDatumDo.TabIndex = 20;
@@ -106,7 +128,7 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             // txtCena
             // 
             this.txtCena.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCena.Location = new System.Drawing.Point(152, 58);
+            this.txtCena.Location = new System.Drawing.Point(181, 56);
             this.txtCena.Name = "txtCena";
             this.txtCena.Size = new System.Drawing.Size(121, 22);
             this.txtCena.TabIndex = 19;
@@ -115,16 +137,16 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(31, 58);
+            this.label6.Location = new System.Drawing.Point(31, 56);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 17);
+            this.label6.Size = new System.Drawing.Size(78, 17);
             this.label6.TabIndex = 18;
-            this.label6.Text = "Cena:";
+            this.label6.Text = "Cena: (din)";
             // 
             // btnOcistiPretragu
             // 
             this.btnOcistiPretragu.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnOcistiPretragu.Location = new System.Drawing.Point(33, 164);
+            this.btnOcistiPretragu.Location = new System.Drawing.Point(34, 169);
             this.btnOcistiPretragu.Name = "btnOcistiPretragu";
             this.btnOcistiPretragu.Size = new System.Drawing.Size(321, 28);
             this.btnOcistiPretragu.TabIndex = 17;
@@ -164,7 +186,7 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             // txtNazivPaketa
             // 
             this.txtNazivPaketa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNazivPaketa.Location = new System.Drawing.Point(152, 18);
+            this.txtNazivPaketa.Location = new System.Drawing.Point(181, 18);
             this.txtNazivPaketa.Name = "txtNazivPaketa";
             this.txtNazivPaketa.Size = new System.Drawing.Size(121, 22);
             this.txtNazivPaketa.TabIndex = 2;
@@ -183,7 +205,7 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 101);
+            this.label2.Location = new System.Drawing.Point(31, 95);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 17);
             this.label2.TabIndex = 5;
@@ -196,7 +218,7 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             this.dgvPretrazi.Location = new System.Drawing.Point(488, 121);
             this.dgvPretrazi.Name = "dgvPretrazi";
             this.dgvPretrazi.RowHeadersWidth = 51;
-            this.dgvPretrazi.Size = new System.Drawing.Size(489, 208);
+            this.dgvPretrazi.Size = new System.Drawing.Size(581, 208);
             this.dgvPretrazi.TabIndex = 18;
             // 
             // dgvZivotinjeUPaketu
@@ -283,6 +305,8 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
         private Button btnObrisiZivotinju;
         private Button btnDodajZivotinju;
         private DataGridView dgvDodajZivotinju;
+        private TextBox txtBrojSlobodnihMesta;
+        private Label label3;
 
         public Button BtnPrikazi { get => btnPrikazi; set => btnPrikazi = value; }
         public Button BtnPrikaziSve { get => btnPrikaziSve; set => btnPrikaziSve = value; }
@@ -303,5 +327,6 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
         public Button BtnObrisiZivotinju { get => btnObrisiZivotinju; set => btnObrisiZivotinju = value; }
         public Button BtnDodajZivotinju { get => btnDodajZivotinju; set => btnDodajZivotinju = value; }
         public DataGridView DgvDodajZivotinju { get => dgvDodajZivotinju; set => dgvDodajZivotinju = value; }
+        public TextBox TxtBrojSlobodnihMesta { get => txtBrojSlobodnihMesta; set => txtDatumDo = value; }
     }
 }
