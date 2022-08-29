@@ -107,7 +107,7 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
 
         private Paket NapuniPaket(string naziv, double cena, DateTime datum)
         {
-            Paket p = new Paket(null, naziv, cena == 0 ? null : cena.ToString(), datum == new DateTime() ? null : datum.ToString("yyyy-MM-dd"));
+            Paket p = new Paket(null, naziv, cena == 0 ? null : cena.ToString(), datum == new DateTime() ? null : datum.ToString("yyyy-MM-dd"),null);
             return p;
         }
 
@@ -122,7 +122,7 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
                 MessageBox.Show("Niste odabrali paket za azuriranje");
                 return;
             }
-            Paket p = new Paket(izabraniPaket.IdPaketa.ToString(), null, null, null);
+            Paket p = new Paket(izabraniPaket.IdPaketa.ToString(), null, null, null,null);
             p.IdPaketa = izabraniPaket.IdPaketa;
             p.NazivPaketa = uc.TxtNazivPaketa.Text;
             p.Cena = double.Parse(uc.TxtCena.Text);

@@ -45,6 +45,8 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
                 return;
             }
 
+
+
             Prijava p = new Prijava() { IdPaketa = (uc.DgvPaketi.SelectedRows[0].DataBoundItem as Paket).IdPaketa, IdPosetioca = (uc.DgvPosetioci.SelectedRows[0].DataBoundItem as Posetilac).IdPosetioca, BrojOsoba = brojOsoba
             ,DatumPrijave=DateTime.Now};
 

@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/Ivan/Source/Repos/ZooloskiVrtNaprednoProgramiranje2/ZooloskiVrt.Server.SistemskeOperacije",
+  "source_base_path": "C:/Users/Ivan/Source/Repos/ZooloskiVrtNaprednoProgramiranje3/ZooloskiVrt.Server.SistemskeOperacije",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -60,7 +60,7 @@
           "hash": "R4SJGAGkQbS7pt/7I2a/+HPHsd145BQk6tvDPP+S9KU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "70aWjQ4wm+e77TNtEHMe2lkVfmS+7PvUb3Dvh7n8yXw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -84,7 +84,7 @@
           "hash": "IpQ4gjK5UbG75u9shjRLQ67RbN0N8lkKgcDHK9H+Ppc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -96,7 +96,7 @@
           "hash": "XPh9xPIr0xUuYpDpnXKJOXVvqdcgcHGSE3MZblBiP2E="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -108,7 +108,7 @@
           "hash": "hKme8ROqzfV2qHwBzkKw/DpYrxWy5xeqvU6xbRHro1k="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -120,7 +120,7 @@
           "hash": "VGf569DS8k8d49HrD/1yQg9W4pp/etA3sFaSWFwOgG0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -132,7 +132,7 @@
           "hash": "TwyxCmkp/VDGg5lAGXW1FVxsfCgR2+pJ7TpJNSkYXcM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.SacuvajPaketSO.html",
-          "hash": "3zGb15FXzaniWSZFpSabbLlY3o2jC4cNp2vxcPSXZYg="
+          "hash": "Fu+tCWOP9JBxrKWIpIa4gI3SDcEmRmjjOabGXOohj3c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.SacuvajPrijavuSO.html",
-          "hash": "PLB85GMYlF5xwn7btsQcLjXlNkovYfpPENrhbbQTWGg="
+          "hash": "u0LxBHpYRP1l74nqVhnh8Mv/yAquvHKPzS+L85pSJao="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -168,7 +168,7 @@
           "hash": "EXXq9fG8D1Y8ibNWOVPergKBMQ9xRWQd7Gawbawr8Lc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -180,7 +180,7 @@
           "hash": "70C1Wemk81Z6BBvZMQrI43z1PScOegeoY9lx4foc2y0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -192,7 +192,7 @@
           "hash": "b9uo7cOqeYG8FVo90UMds1G4byx6zZHblTODvsdY5co="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -204,7 +204,7 @@
           "hash": "Irv/ZOxfT09ZJ0gmlmAbcld4aDWkAjHK3QTbijoamBc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -216,7 +216,7 @@
           "hash": "oFGYprO1KxbPzz+voHLLRujXseFNcMzavQ2YFbvG+/0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -228,7 +228,7 @@
           "hash": "qur5jcpgzIVCWRI8UPJ9yo5HoLrjiR0oWh0OCBpgMS8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -240,7 +240,7 @@
           "hash": "c5iX2icbYS7vKmeEx+LFLfWhK8/k/SvdquDi+T5XjsU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -252,7 +252,7 @@
           "hash": "1192pk/TXTRnX7AVpov6kGUH/KPQjegkYYNHrTX3p+s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -299,7 +299,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 17,
-          "skipped_file_count": 17
+          "skipped_file_count": 2
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

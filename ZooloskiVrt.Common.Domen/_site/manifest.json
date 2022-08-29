@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/Ivan/Source/Repos/ZooloskiVrtNaprednoProgramiranje2/ZooloskiVrt.Common.Domen",
+  "source_base_path": "C:/Users/Ivan/Source/Repos/ZooloskiVrtNaprednoProgramiranje3/ZooloskiVrt.Common.Domen",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Common.Domen.Paket.html",
-          "hash": "Or9ofX2lDmcCjv7IsWMVQSxkT6JIUWFdSOMWPp9r9Pk="
+          "hash": "Ks5I3HYwbnqhgG2AeMIbypGduPKZUnKjAHYyhM8Z0WI="
         }
       },
       "is_incremental": true,
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Common.Domen.Posetilac.html",
-          "hash": "nL0UBAgCKvonQbsSWoJV5XFJbyJqB503G64tfZcBYOo="
+          "hash": "3KX1vXaCiphcdat97izO8KwZtA5tLrf/CulkW2jdUhY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Common.Domen.Prijava.html",
-          "hash": "9zdpc2ac1MyFIzrd7AQYPxg7ceo70CJCo/wG2pUP9gI="
+          "hash": "SBxs7baH0Ku3knH1bVzPslUzwA32RX2yBk48iOvWhC0="
         }
       },
       "is_incremental": true,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Common.Domen.Zaposleni.html",
-          "hash": "YtqhHD1ndoqO+wqYAIMsz7u/zGI/6usS/GK2Wc7MdWY="
+          "hash": "aR+uMn7lZ5WHAomZLw6AMeMq2G89i+EHKG5/PITPuIM="
         }
       },
       "is_incremental": true,
@@ -180,7 +180,7 @@
           "hash": "CIbYyGv/pYbUDHBCF5S83ZV6fBTaOyLWheRJSlNlOZs="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -227,7 +227,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 11,
-          "skipped_file_count": 10
+          "skipped_file_count": 11
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

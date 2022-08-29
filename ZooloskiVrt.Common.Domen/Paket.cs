@@ -35,6 +35,11 @@ namespace ZooloskiVrt.Common.Domen
         /// </value>
         public DateTime DatumDo { get; set; }
 
+        /// <value>
+        /// Broj slobodnih mesta u paketu
+        /// </value>
+        public int BrojSlobodnihMesta { get; set; }
+
         /// <summary>
         /// Bezparametarski konstruktor klase Paket
         /// </summary>
@@ -59,13 +64,13 @@ namespace ZooloskiVrt.Common.Domen
         /// Vrednosti atributa klase Paket koje ulaze u obzir u sql upitima
         /// </value>
         [Browsable(false)]
-        public string Vrednosti => $"'{NazivPaketa}',{Cena},'{DatumDo}'";
+        public string Vrednosti => $"'{NazivPaketa}',{Cena},'{DatumDo}',{BrojSlobodnihMesta}";
 
         /// <value>
         /// Nazivi kolona odgovarajucih atributa u bazi podataka
         /// </value>
         [Browsable(false)]
-        public string Kolone => "(NazivPaketa,Cena,DatumDo)";
+        public string Kolone => "(NazivPaketa,Cena,DatumDo,BrojSlobodnihMesta)";
 
         /// <value>
         /// Uslov u where klauzuli pri izvrsavanju sql upita
@@ -77,7 +82,7 @@ namespace ZooloskiVrt.Common.Domen
         /// Sql upit za azuriranje podataka o paketu
         /// </value>
         [Browsable(false)]
-        public string Azuriranje => $"NazivPaketa='{NazivPaketa}', Cena={Cena}, DatumDo='{DatumDo}'";
+        public string Azuriranje => $"NazivPaketa='{NazivPaketa}', Cena={Cena}, DatumDo='{DatumDo}',BrojSlobodnihMesta='{BrojSlobodnihMesta}'";
 
         /// <value>
         /// Uslov koji se postavlja u slucaju da je neophodno <br/>
@@ -94,6 +99,9 @@ namespace ZooloskiVrt.Common.Domen
         public string IdKolona { get; } = "IdPaketa";
 
 
+        
+
+
         /// <summary>
         /// Funkcija koja cita jedan red iz tabele Paket baze podataka
         /// </summary>
@@ -106,7 +114,8 @@ namespace ZooloskiVrt.Common.Domen
                 IdPaketa = (int)reader["IdPaketa"],
                 NazivPaketa=(string)reader["NazivPaketa"],
                 Cena = (double)reader["Cena"],
-                DatumDo = (DateTime)reader["DatumDo"]
+                DatumDo = (DateTime)reader["DatumDo"],
+                BrojSlobodnihMesta = (int)reader["BrojSlobodnihMesta"]
             };
             return p;
         }
@@ -118,14 +127,15 @@ namespace ZooloskiVrt.Common.Domen
         /// <param name="nazivPaketa">naziv paketa</param>
         /// <param name="cena">cena paketa</param>
         /// <param name="datumDo">datum do kada je paket aktivan</param>
-        public Paket(string id, string nazivPaketa, string cena,string datumDo)
+        public Paket(string id, string nazivPaketa, string cena,string datumDo,string brojSlobodnihMesta)
         {
             if (string.IsNullOrEmpty(id)) { id = "%"; }
             if (string.IsNullOrEmpty(nazivPaketa)) { nazivPaketa = "%"; }
             if (string.IsNullOrEmpty(cena)) { cena = "%"; }
             if (string.IsNullOrEmpty(datumDo)) {datumDo = "%"; }
+            if (string.IsNullOrEmpty(brojSlobodnihMesta)) { brojSlobodnihMesta = "%"; }
           
-            this.Uslov = $"cast(IdPaketa as nvarchar(10)) like '{id}' and NazivPaketa like '{nazivPaketa}' and cast(Cena as float) like '{cena}' and DatumDo like '{datumDo}'";
+            this.Uslov = $"cast(IdPaketa as nvarchar(10)) like '{id}' and NazivPaketa like '{nazivPaketa}' and cast(Cena as float) like '{cena}' and DatumDo like '{datumDo}' and BrojSlobodnihMesta like '{brojSlobodnihMesta}'";
         }
 
 

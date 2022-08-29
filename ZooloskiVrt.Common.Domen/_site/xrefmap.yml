@@ -129,12 +129,12 @@ references:
   commentId: M:ZooloskiVrt.Common.Domen.Paket.#ctor
   fullName: ZooloskiVrt.Common.Domen.Paket.Paket()
   nameWithType: Paket.Paket()
-- uid: ZooloskiVrt.Common.Domen.Paket.#ctor(System.String,System.String,System.String,System.String)
-  name: Paket(String, String, String, String)
-  href: api/ZooloskiVrt.Common.Domen.Paket.html#ZooloskiVrt_Common_Domen_Paket__ctor_System_String_System_String_System_String_System_String_
-  commentId: M:ZooloskiVrt.Common.Domen.Paket.#ctor(System.String,System.String,System.String,System.String)
-  fullName: ZooloskiVrt.Common.Domen.Paket.Paket(System.String, System.String, System.String, System.String)
-  nameWithType: Paket.Paket(String, String, String, String)
+- uid: ZooloskiVrt.Common.Domen.Paket.#ctor(System.String,System.String,System.String,System.String,System.String)
+  name: Paket(String, String, String, String, String)
+  href: api/ZooloskiVrt.Common.Domen.Paket.html#ZooloskiVrt_Common_Domen_Paket__ctor_System_String_System_String_System_String_System_String_System_String_
+  commentId: M:ZooloskiVrt.Common.Domen.Paket.#ctor(System.String,System.String,System.String,System.String,System.String)
+  fullName: ZooloskiVrt.Common.Domen.Paket.Paket(System.String, System.String, System.String, System.String, System.String)
+  nameWithType: Paket.Paket(String, String, String, String, String)
 - uid: ZooloskiVrt.Common.Domen.Paket.#ctor*
   name: Paket
   href: api/ZooloskiVrt.Common.Domen.Paket.html#ZooloskiVrt_Common_Domen_Paket__ctor_
@@ -155,6 +155,19 @@ references:
   isSpec: "True"
   fullName: ZooloskiVrt.Common.Domen.Paket.Azuriranje
   nameWithType: Paket.Azuriranje
+- uid: ZooloskiVrt.Common.Domen.Paket.BrojSlobodnihMesta
+  name: BrojSlobodnihMesta
+  href: api/ZooloskiVrt.Common.Domen.Paket.html#ZooloskiVrt_Common_Domen_Paket_BrojSlobodnihMesta
+  commentId: P:ZooloskiVrt.Common.Domen.Paket.BrojSlobodnihMesta
+  fullName: ZooloskiVrt.Common.Domen.Paket.BrojSlobodnihMesta
+  nameWithType: Paket.BrojSlobodnihMesta
+- uid: ZooloskiVrt.Common.Domen.Paket.BrojSlobodnihMesta*
+  name: BrojSlobodnihMesta
+  href: api/ZooloskiVrt.Common.Domen.Paket.html#ZooloskiVrt_Common_Domen_Paket_BrojSlobodnihMesta_
+  commentId: Overload:ZooloskiVrt.Common.Domen.Paket.BrojSlobodnihMesta
+  isSpec: "True"
+  fullName: ZooloskiVrt.Common.Domen.Paket.BrojSlobodnihMesta
+  nameWithType: Paket.BrojSlobodnihMesta
 - uid: ZooloskiVrt.Common.Domen.Paket.Cena
   name: Cena
   href: api/ZooloskiVrt.Common.Domen.Paket.html#ZooloskiVrt_Common_Domen_Paket_Cena
