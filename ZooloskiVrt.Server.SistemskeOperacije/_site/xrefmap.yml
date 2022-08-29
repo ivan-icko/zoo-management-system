@@ -614,6 +614,12 @@ references:
   isSpec: "True"
   fullName: ZooloskiVrt.Server.SistemskeOperacije.SacuvajPrijavuSO.Izvrsi
   nameWithType: SacuvajPrijavuSO.Izvrsi
+- uid: ZooloskiVrt.Server.SistemskeOperacije.SacuvajPrijavuSO.paket
+  name: paket
+  href: api/ZooloskiVrt.Server.SistemskeOperacije.SacuvajPrijavuSO.html#ZooloskiVrt_Server_SistemskeOperacije_SacuvajPrijavuSO_paket
+  commentId: F:ZooloskiVrt.Server.SistemskeOperacije.SacuvajPrijavuSO.paket
+  fullName: ZooloskiVrt.Server.SistemskeOperacije.SacuvajPrijavuSO.paket
+  nameWithType: SacuvajPrijavuSO.paket
 - uid: ZooloskiVrt.Server.SistemskeOperacije.SacuvajPrijavuSO.prijava
   name: prijava
   href: api/ZooloskiVrt.Server.SistemskeOperacije.SacuvajPrijavuSO.html#ZooloskiVrt_Server_SistemskeOperacije_SacuvajPrijavuSO_prijava

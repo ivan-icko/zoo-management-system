@@ -42,6 +42,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
 
             }
             catch (Exception ex)
+
             {
                 repozitorijum.Rollback();
                 Console.WriteLine(ex.Message);

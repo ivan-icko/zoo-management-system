@@ -23,7 +23,7 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
             NapuniPosetioce();
             NapuniPakete();
             uc.BtnDodaj.Click += BtnDodaj_Click;
-          
+
 
         }
 
@@ -39,7 +39,7 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
                 System.Windows.Forms.MessageBox.Show("Niste odabrali posetioca");
                 return;
             }
-            if(string.IsNullOrEmpty(uc.TxtBrojOsoba.Text)|| !int.TryParse(uc.TxtBrojOsoba.Text, out int brojOsoba) ||brojOsoba<=0)
+            if (string.IsNullOrEmpty(uc.TxtBrojOsoba.Text) || !int.TryParse(uc.TxtBrojOsoba.Text, out int brojOsoba) || brojOsoba <= 0)
             {
                 System.Windows.Forms.MessageBox.Show("Greska pri unosu broja osoba!");
                 return;
@@ -47,11 +47,19 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
 
 
 
-            Prijava p = new Prijava() { IdPaketa = (uc.DgvPaketi.SelectedRows[0].DataBoundItem as Paket).IdPaketa, IdPosetioca = (uc.DgvPosetioci.SelectedRows[0].DataBoundItem as Posetilac).IdPosetioca, BrojOsoba = brojOsoba
-            ,DatumPrijave=DateTime.Now};
+
+            Prijava p = new Prijava()
+            {
+                IdPaketa = (uc.DgvPaketi.SelectedRows[0].DataBoundItem as Paket).IdPaketa,
+                IdPosetioca = (uc.DgvPosetioci.SelectedRows[0].DataBoundItem as Posetilac).IdPosetioca,
+                BrojOsoba = brojOsoba
+            ,
+                DatumPrijave = DateTime.Now
+            };
 
             List<Prijava> prijave = Komunikacija.Instance.ZahtevajIVratiRezultat<List<Prijava>>(Common.Komunikacija.Operacija.VratiSvePrijave, new Prijava());
             DodajPrijavu(p);
+            NapuniPakete();
         }
 
         private void DodajPrijavu(Prijava p)

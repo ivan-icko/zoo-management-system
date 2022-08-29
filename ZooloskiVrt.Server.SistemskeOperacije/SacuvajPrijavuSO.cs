@@ -18,6 +18,8 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         /// </value>
         public Prijava prijava;
 
+        public Paket paket;
+
         /// <value>
         /// Boolean vrednost koja moze biti true, ako je cuvanje prijave uspesno, <br/> ili false ako nije
         /// </value>
@@ -59,6 +61,22 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
         {
             try
             {
+                Paket paket = new Paket();
+                paket.Uslov = $"IdPaketa={prijava.IdPaketa}";
+                var paketi = repozitorijum.Pretrazi(paket);
+                paket=paketi[0] as Paket;
+                paket.Uslov = $"IdPaketa={prijava.IdPaketa}";
+                if (prijava.BrojOsoba > paket.BrojSlobodnihMesta)
+                {
+                    throw new Exception();
+                }
+                else
+                {
+                    paket.BrojSlobodnihMesta -= prijava.BrojOsoba;
+                    repozitorijum.Azuriraj(paket);
+                }
+
+
                 repozitorijum.Sacuvaj(prijava);
             }
             catch (Exception ex)

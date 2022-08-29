@@ -72,7 +72,7 @@ namespace ZooloskiVrt.Server.Repozitorujum
         {
             SqlCommand command = broker.KreirajKomandu();
             command.CommandText = $"select * from {o.NazivTabele} where {o.Uslov}";
-            List<IDomenskiObjekat> obj1 = new List<IDomenskiObjekat>() ;
+            List<IDomenskiObjekat> obj1 = new List<IDomenskiObjekat>();
             using (SqlDataReader reader = command.ExecuteReader())
             {
                 while (reader.Read())
