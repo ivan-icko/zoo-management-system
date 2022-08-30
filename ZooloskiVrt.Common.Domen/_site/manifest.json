@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Common.Domen.Pol.html",
-          "hash": "LMofCunTwCHGXNJZNT849GsHaDpv96JYwPgx0eJiXK8="
+          "hash": "L9nakqrGhfb2VPFNFRUIAIfnPz8ZI/ycUV0EqqOIn4Y="
         }
       },
       "is_incremental": true,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Common.Domen.Posetilac.html",
-          "hash": "3KX1vXaCiphcdat97izO8KwZtA5tLrf/CulkW2jdUhY="
+          "hash": "DGrAvYxE5KLkk9d18I9bLq3vV1/vo6O7rJCrBPywTe0="
         }
       },
       "is_incremental": true,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Common.Domen.PosetilacPrijava.html",
-          "hash": "hof57JOVVzShCRNaSKFvqQ6Tys8cvLwAoVR6KPCxIhU="
+          "hash": "W3Aj9JKXz7g08WtoUnR+0STiruHdHk9krMhAhpmUx2o="
         }
       },
       "is_incremental": true,
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Common.Domen.Zivotinja.html",
-          "hash": "RYI710eLcuWQKcbD9JLrop6f7+RnLfLxM/6f/jue9CY="
+          "hash": "h3XnjfdwfHovDsCTZyiAlSlcvkBrRvx8cQKxG8DKT6s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -180,7 +180,7 @@
           "hash": "CIbYyGv/pYbUDHBCF5S83ZV6fBTaOyLWheRJSlNlOZs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -227,7 +227,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 11,
-          "skipped_file_count": 11
+          "skipped_file_count": 10
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

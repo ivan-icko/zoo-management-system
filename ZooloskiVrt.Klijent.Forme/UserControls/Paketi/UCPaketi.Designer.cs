@@ -51,6 +51,7 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             this.btnObrisiZivotinju = new System.Windows.Forms.Button();
             this.btnDodajZivotinju = new System.Windows.Forms.Button();
             this.dgvDodajZivotinju = new System.Windows.Forms.DataGridView();
+            this.btnPaketPosetilac = new System.Windows.Forms.Button();
             this.gbPretraga.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPretrazi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvZivotinjeUPaketu)).BeginInit();
@@ -70,11 +71,11 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             // btnPrikaziSve
             // 
             this.btnPrikaziSve.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPrikaziSve.Location = new System.Drawing.Point(836, 349);
+            this.btnPrikaziSve.Location = new System.Drawing.Point(929, 348);
             this.btnPrikaziSve.Name = "btnPrikaziSve";
             this.btnPrikaziSve.Size = new System.Drawing.Size(141, 48);
             this.btnPrikaziSve.TabIndex = 21;
-            this.btnPrikaziSve.Text = "Prikazi sve";
+            this.btnPrikaziSve.Text = "Prikazi sve pakete";
             this.btnPrikaziSve.UseVisualStyleBackColor = true;
             // 
             // gbPretraga
@@ -214,6 +215,7 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             // dgvPretrazi
             // 
             this.dgvPretrazi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvPretrazi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPretrazi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPretrazi.Location = new System.Drawing.Point(488, 121);
             this.dgvPretrazi.Name = "dgvPretrazi";
@@ -224,6 +226,7 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             // dgvZivotinjeUPaketu
             // 
             this.dgvZivotinjeUPaketu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvZivotinjeUPaketu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvZivotinjeUPaketu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvZivotinjeUPaketu.Location = new System.Drawing.Point(86, 461);
             this.dgvZivotinjeUPaketu.Name = "dgvZivotinjeUPaketu";
@@ -261,12 +264,23 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
             this.dgvDodajZivotinju.Size = new System.Drawing.Size(830, 204);
             this.dgvDodajZivotinju.TabIndex = 25;
             // 
+            // btnPaketPosetilac
+            // 
+            this.btnPaketPosetilac.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPaketPosetilac.Location = new System.Drawing.Point(715, 350);
+            this.btnPaketPosetilac.Name = "btnPaketPosetilac";
+            this.btnPaketPosetilac.Size = new System.Drawing.Size(140, 48);
+            this.btnPaketPosetilac.TabIndex = 27;
+            this.btnPaketPosetilac.Text = "Prikazi posetilce za paket";
+            this.btnPaketPosetilac.UseVisualStyleBackColor = true;
+            // 
             // UCPaketi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.btnPaketPosetilac);
             this.Controls.Add(this.dgvDodajZivotinju);
             this.Controls.Add(this.btnDodajZivotinju);
             this.Controls.Add(this.btnObrisiZivotinju);
@@ -307,6 +321,7 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
         private DataGridView dgvDodajZivotinju;
         private TextBox txtBrojSlobodnihMesta;
         private Label label3;
+        private Button btnPaketPosetilac;
 
         public Button BtnPrikazi { get => btnPrikazi; set => btnPrikazi = value; }
         public Button BtnPrikaziSve { get => btnPrikaziSve; set => btnPrikaziSve = value; }
@@ -325,8 +340,10 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
         public DataGridView DataGridView1 { get => dgvZivotinjeUPaketu; set => dgvZivotinjeUPaketu = value; }
         public DataGridView DgvZivotinjeUPaketu { get => dgvZivotinjeUPaketu; set => dgvZivotinjeUPaketu = value; }
         public Button BtnObrisiZivotinju { get => btnObrisiZivotinju; set => btnObrisiZivotinju = value; }
+        //public Button BtnPrikaziPosetioceZaPaket { get => btnPaketPosetilac; set => btnPaketPosetilac = value; }
         public Button BtnDodajZivotinju { get => btnDodajZivotinju; set => btnDodajZivotinju = value; }
         public DataGridView DgvDodajZivotinju { get => dgvDodajZivotinju; set => dgvDodajZivotinju = value; }
         public TextBox TxtBrojSlobodnihMesta { get => txtBrojSlobodnihMesta; set => txtDatumDo = value; }
+        public Button BtnPaketPosetilac { get => btnPaketPosetilac; set => btnPaketPosetilac = value; }
     }
 }

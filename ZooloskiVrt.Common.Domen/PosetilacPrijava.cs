@@ -40,7 +40,7 @@ namespace ZooloskiVrt.Common.Domen
         /// <value>
         /// Datum rezirvisanja paketa
         /// </value>
-        public DateTime Datum { get; set; }
+        public DateTime DatumPrijave { get; set; }
 
         /// <value>
         /// Naziv tabele u bazi podataka
@@ -52,7 +52,7 @@ namespace ZooloskiVrt.Common.Domen
         /// Vrednosti atributa klase koji se dematerijalizuju u kolone baze
         /// </value>
         [Browsable(false)]
-        public string Vrednosti => $"'{ImeIPrezime}','{NazivPaketa}','{Telefon}','{Email}',{BrojOsoba},'{Datum}";
+        public string Vrednosti => $"'{ImeIPrezime}','{NazivPaketa}','{Telefon}','{Email}',{BrojOsoba},'{DatumPrijave}";
 
         /// <value>
         /// Naziv kolona ove klase u bazi podataka
@@ -106,7 +106,8 @@ namespace ZooloskiVrt.Common.Domen
                 NazivPaketa = (string)reader["NazivPaketa"],
                 Telefon = (string)reader["Telefon"],
                 Email = (string)reader["Email"],
-                BrojOsoba = (int)reader["BrojOsoba"]
+                BrojOsoba = (int)reader["BrojOsoba"],
+                DatumPrijave = (DateTime)reader["DatumPrijave"]
             };
             return pp;
         

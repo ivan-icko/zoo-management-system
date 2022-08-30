@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUIController\Paketi\PaketPosetilacKontroler.cs" />
     <Compile Include="GUIController\Staro\DodajZivotinjuUPaketKontroler.cs" />
     <Compile Include="GUIController\Staro\ObrisiZivotinjuKontroler.cs" />
     <Compile Include="GUIController\Paketi\PaketiKontroler.cs" />
@@ -81,6 +82,12 @@
     </Compile>
     <Compile Include="UserControls\Paketi\UCPaketi.Designer.cs">
       <DependentUpon>UCPaketi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Paketi\UCPaketPosetioci.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Paketi\UCPaketPosetioci.Designer.cs">
+      <DependentUpon>UCPaketPosetioci.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Posetioci\UCPosetioci.cs">
       <SubType>UserControl</SubType>
@@ -133,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Paketi\UCPaketi.resx">
       <DependentUpon>UCPaketi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Paketi\UCPaketPosetioci.resx">
+      <DependentUpon>UCPaketPosetioci.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Posetioci\UCPosetioci.resx">
       <DependentUpon>UCPosetioci.cs</DependentUpon>

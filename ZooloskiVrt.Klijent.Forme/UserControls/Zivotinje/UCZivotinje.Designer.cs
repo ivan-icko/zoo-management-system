@@ -60,6 +60,7 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Zivotinje
             // dgvPretrazi
             // 
             this.dgvPretrazi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvPretrazi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPretrazi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPretrazi.Location = new System.Drawing.Point(480, 33);
             this.dgvPretrazi.Name = "dgvPretrazi";

@@ -28,6 +28,7 @@ namespace ZooloskiVrt.Common.Komunikacija
         IzbrisiZivotinjuIzPaketa,
         VratiSvePrijave,
         VratiSvePrijavljeneZaposlene,
-        PronadjiZivotinjeZaPaket
+        PronadjiZivotinjeZaPaket,
+        VratiSvePosetioceZaPaket
     }
 }

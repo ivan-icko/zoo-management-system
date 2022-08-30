@@ -39,7 +39,34 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
             uc.BtnAzuriraj.Click += BtnAzuriraj_Click;
             uc.BtnPretrazi.Click += BtnPretrazi_Click;
             uc.BtnObrisiZivotinju.Click += BtnObrisiZivotinju_Click;
+            uc.BtnPaketPosetilac.Click += BtnPaketPosetilac_Click;
         }
+
+        private void BtnPaketPosetilac_Click(object sender, EventArgs e)
+        {
+            if (uc.DgvPretrazi.SelectedRows.Count == 0)
+            {
+                System.Windows.Forms.MessageBox.Show("Niste odabrali paket za prikaz");
+                return;
+            }
+
+            int idPaketa = ((Paket)uc.DgvPretrazi.SelectedRows[0].DataBoundItem).IdPaketa;
+            List<Paket> pom = new List<Paket>();
+            if ((pom = Komunikacija.Instance.ZahtevajIVratiRezultat<List<Paket>>(Common.Komunikacija.Operacija.PronadjiPakete, new Paket() { Uslov = $"IdPaketa={idPaketa}" })) == null)
+            {
+                return;
+            }
+            izabraniPaket = pom.SingleOrDefault();
+
+            UCPaketPosetioci UcPretrazi = new UCPaketPosetioci(izabraniPaket);
+            UcPretrazi.Dock = DockStyle.Fill;
+            pnlMain.Controls.Clear();
+            pnlMain.Controls.Add(UcPretrazi);
+        }
+
+
+
+
 
         private void BtnObrisiZivotinju_Click(object sender, EventArgs e)
         {

@@ -85,12 +85,14 @@ namespace ZooloskiVrt.Common.Domen
         /// Uslov koji se postavlja u slucaju da je neophodno <br/>
         /// izvrsiti spajanje dve ili vise tabela
         /// </value>
+        [Browsable(false)]
         public string JoinUslov { get; set; }
 
         /// <value>
         /// Vrednost atributa klase Zaposleni, koji predstavlja <br/>
         /// primarni kljuc u bazi podataka
         /// </value>
+        [Browsable(false)]
         public string IdKolona { get; } = "IdZivotinje";
 
 

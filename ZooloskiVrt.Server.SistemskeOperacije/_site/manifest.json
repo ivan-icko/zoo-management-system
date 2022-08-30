@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.OpstaSistemskaOperacija.html",
-          "hash": "nZf6AbBfHqsqEnQ/jZSPxeXBLJ28i2MIyy4FwVGVnMI="
+          "hash": "hW+q6cAKGTZwfWiXSZCN9PxGgguREXq3L/cLTDF1cbY="
         }
       },
       "is_incremental": true,
@@ -197,6 +197,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePosetioceZaPaket.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePosetioceZaPaket.html",
+          "hash": "y9lIWYhioWyw/lexcqKwoswyKTUXVytPhzh8ILuXdnY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/ZooloskiVrt.Server.SistemskeOperacije.VratiSvePrijaveSO.yml",
       "output": {
         ".html": {
@@ -249,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZooloskiVrt.Server.SistemskeOperacije.html",
-          "hash": "1192pk/TXTRnX7AVpov6kGUH/KPQjegkYYNHrTX3p+s="
+          "hash": "De/nleefewQJcjeOlkptfQ9lhL86K3R6ryWtravhdUU="
         }
       },
       "is_incremental": true,
@@ -261,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "xiXR09g66T8f9oqYuqZ3+IPzlzjDjiPSVMtI22YGAsA="
+          "hash": "JO0xEXFdePWeSAgrPFN/rsNSsngGKRZyWdVru/Igdl4="
         }
       },
       "is_incremental": false,
@@ -298,8 +310,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 17,
-          "skipped_file_count": 17
+          "total_file_count": 18,
+          "skipped_file_count": 18
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

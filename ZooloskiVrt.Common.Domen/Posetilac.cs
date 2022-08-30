@@ -205,5 +205,10 @@ namespace ZooloskiVrt.Common.Domen
             return obj is Posetilac posetilac &&
                    IdPosetioca == posetilac.IdPosetioca;
         }
+
+        public override int GetHashCode()
+        {
+            return 828947939 + IdPosetioca.GetHashCode();
+        }
     }
 }

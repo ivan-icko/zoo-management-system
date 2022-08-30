@@ -20,6 +20,6 @@ namespace ZooloskiVrt.Common.Domen
     /// </summary>
     public enum Pol
     {
-        Muski,Zenski
+        Muski,Zenski,Neodredjeni
     }
 }

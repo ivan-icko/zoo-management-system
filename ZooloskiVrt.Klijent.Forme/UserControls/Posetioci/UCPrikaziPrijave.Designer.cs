@@ -39,12 +39,13 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Posetioci
             // dgvPrijave
             // 
             this.dgvPrijave.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvPrijave.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPrijave.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPrijave.Location = new System.Drawing.Point(48, 97);
+            this.dgvPrijave.Location = new System.Drawing.Point(91, 132);
             this.dgvPrijave.Name = "dgvPrijave";
             this.dgvPrijave.RowHeadersWidth = 51;
             this.dgvPrijave.RowTemplate.Height = 24;
-            this.dgvPrijave.Size = new System.Drawing.Size(719, 385);
+            this.dgvPrijave.Size = new System.Drawing.Size(907, 392);
             this.dgvPrijave.TabIndex = 0;
             // 
             // lbl1
@@ -52,7 +53,7 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Posetioci
             this.lbl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(62, 65);
+            this.lbl1.Location = new System.Drawing.Point(99, 76);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(150, 29);
             this.lbl1.TabIndex = 1;
@@ -65,7 +66,7 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Posetioci
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.dgvPrijave);
             this.Name = "UCPrikaziPrijave";
-            this.Size = new System.Drawing.Size(832, 520);
+            this.Size = new System.Drawing.Size(1065, 591);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrijave)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

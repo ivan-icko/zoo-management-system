@@ -634,6 +634,12 @@ references:
   commentId: F:ZooloskiVrt.Common.Domen.Pol.Muski
   fullName: ZooloskiVrt.Common.Domen.Pol.Muski
   nameWithType: Pol.Muski
+- uid: ZooloskiVrt.Common.Domen.Pol.Neodredjeni
+  name: Neodredjeni
+  href: api/ZooloskiVrt.Common.Domen.Pol.html#ZooloskiVrt_Common_Domen_Pol_Neodredjeni
+  commentId: F:ZooloskiVrt.Common.Domen.Pol.Neodredjeni
+  fullName: ZooloskiVrt.Common.Domen.Pol.Neodredjeni
+  nameWithType: Pol.Neodredjeni
 - uid: ZooloskiVrt.Common.Domen.Pol.Zenski
   name: Zenski
   href: api/ZooloskiVrt.Common.Domen.Pol.html#ZooloskiVrt_Common_Domen_Pol_Zenski
@@ -711,6 +717,19 @@ references:
   isSpec: "True"
   fullName: ZooloskiVrt.Common.Domen.Posetilac.GetEmail
   nameWithType: Posetilac.GetEmail
+- uid: ZooloskiVrt.Common.Domen.Posetilac.GetHashCode
+  name: GetHashCode()
+  href: api/ZooloskiVrt.Common.Domen.Posetilac.html#ZooloskiVrt_Common_Domen_Posetilac_GetHashCode
+  commentId: M:ZooloskiVrt.Common.Domen.Posetilac.GetHashCode
+  fullName: ZooloskiVrt.Common.Domen.Posetilac.GetHashCode()
+  nameWithType: Posetilac.GetHashCode()
+- uid: ZooloskiVrt.Common.Domen.Posetilac.GetHashCode*
+  name: GetHashCode
+  href: api/ZooloskiVrt.Common.Domen.Posetilac.html#ZooloskiVrt_Common_Domen_Posetilac_GetHashCode_
+  commentId: Overload:ZooloskiVrt.Common.Domen.Posetilac.GetHashCode
+  isSpec: "True"
+  fullName: ZooloskiVrt.Common.Domen.Posetilac.GetHashCode
+  nameWithType: Posetilac.GetHashCode
 - uid: ZooloskiVrt.Common.Domen.Posetilac.GetIdPosetioca
   name: GetIdPosetioca()
   href: api/ZooloskiVrt.Common.Domen.Posetilac.html#ZooloskiVrt_Common_Domen_Posetilac_GetIdPosetioca
@@ -977,19 +996,19 @@ references:
   isSpec: "True"
   fullName: ZooloskiVrt.Common.Domen.PosetilacPrijava.BrojOsoba
   nameWithType: PosetilacPrijava.BrojOsoba
-- uid: ZooloskiVrt.Common.Domen.PosetilacPrijava.Datum
-  name: Datum
-  href: api/ZooloskiVrt.Common.Domen.PosetilacPrijava.html#ZooloskiVrt_Common_Domen_PosetilacPrijava_Datum
-  commentId: P:ZooloskiVrt.Common.Domen.PosetilacPrijava.Datum
-  fullName: ZooloskiVrt.Common.Domen.PosetilacPrijava.Datum
-  nameWithType: PosetilacPrijava.Datum
-- uid: ZooloskiVrt.Common.Domen.PosetilacPrijava.Datum*
-  name: Datum
-  href: api/ZooloskiVrt.Common.Domen.PosetilacPrijava.html#ZooloskiVrt_Common_Domen_PosetilacPrijava_Datum_
-  commentId: Overload:ZooloskiVrt.Common.Domen.PosetilacPrijava.Datum
+- uid: ZooloskiVrt.Common.Domen.PosetilacPrijava.DatumPrijave
+  name: DatumPrijave
+  href: api/ZooloskiVrt.Common.Domen.PosetilacPrijava.html#ZooloskiVrt_Common_Domen_PosetilacPrijava_DatumPrijave
+  commentId: P:ZooloskiVrt.Common.Domen.PosetilacPrijava.DatumPrijave
+  fullName: ZooloskiVrt.Common.Domen.PosetilacPrijava.DatumPrijave
+  nameWithType: PosetilacPrijava.DatumPrijave
+- uid: ZooloskiVrt.Common.Domen.PosetilacPrijava.DatumPrijave*
+  name: DatumPrijave
+  href: api/ZooloskiVrt.Common.Domen.PosetilacPrijava.html#ZooloskiVrt_Common_Domen_PosetilacPrijava_DatumPrijave_
+  commentId: Overload:ZooloskiVrt.Common.Domen.PosetilacPrijava.DatumPrijave
   isSpec: "True"
-  fullName: ZooloskiVrt.Common.Domen.PosetilacPrijava.Datum
-  nameWithType: PosetilacPrijava.Datum
+  fullName: ZooloskiVrt.Common.Domen.PosetilacPrijava.DatumPrijave
+  nameWithType: PosetilacPrijava.DatumPrijave
 - uid: ZooloskiVrt.Common.Domen.PosetilacPrijava.Email
   name: Email
   href: api/ZooloskiVrt.Common.Domen.PosetilacPrijava.html#ZooloskiVrt_Common_Domen_PosetilacPrijava_Email

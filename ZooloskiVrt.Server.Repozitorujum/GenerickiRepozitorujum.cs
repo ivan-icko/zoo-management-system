@@ -68,6 +68,7 @@ namespace ZooloskiVrt.Server.Repozitorujum
         }
 
 
+
         public List<IDomenskiObjekat> Pretrazi(IDomenskiObjekat o)
         {
             SqlCommand command = broker.KreirajKomandu();

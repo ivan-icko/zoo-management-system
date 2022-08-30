@@ -55,6 +55,7 @@
     <Compile Include="PronadjiZivotinjeSO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VratiSvePaketeSO.cs" />
+    <Compile Include="VratiSvePosetioceZaPaket.cs" />
     <Compile Include="VratiSvePrijaveSO.cs" />
     <Compile Include="VratiSveZivotinjeSO.cs" />
     <Compile Include="VratiSvePosetioceSO.cs" />

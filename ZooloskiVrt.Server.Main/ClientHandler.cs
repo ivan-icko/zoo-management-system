@@ -122,6 +122,21 @@ namespace ZooloskiVrt.Server.Main
                         }
                         else { odgovor.Poruka = "Sistem je obrisao zivotinju"; }
                         break;
+                    case Operacija.VratiSvePosetioceZaPaket:
+                        odgovor.Rezultat = Controller.Instance.VratiSvePosetioceZaPaket(zahtev.Objekat as Paket);
+                        if (odgovor.Rezultat != null)
+                        {
+                            odgovor.PrikaziPoruku = false;
+                            odgovor.Ok = true;
+                            odgovor.Poruka = "Sistem je uspesno ucitao posetioce za izabrani paket";
+                        }
+                        else
+                        {
+                            odgovor.PrikaziPoruku = false;
+                            odgovor.Ok = false;
+                            odgovor.Poruka = "Sistem ne moze da ucita podatke o posetiocima";
+                        }
+                        break;
                     case Operacija.PronadjiZivotinje:
                         odgovor.Rezultat = Controller.Instance.PronadjiZivotinje(zahtev.Objekat as Zivotinja);
                         if (odgovor.Rezultat == null)

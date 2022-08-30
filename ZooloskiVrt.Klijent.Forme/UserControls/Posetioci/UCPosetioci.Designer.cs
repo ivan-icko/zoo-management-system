@@ -48,6 +48,7 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Posetioci
             // dgvPaketi
             // 
             this.dgvPaketi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvPaketi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPaketi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPaketi.Location = new System.Drawing.Point(18, 21);
             this.dgvPaketi.Name = "dgvPaketi";
@@ -59,6 +60,7 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Posetioci
             // dgvPosetioci
             // 
             this.dgvPosetioci.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvPosetioci.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPosetioci.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPosetioci.Location = new System.Drawing.Point(21, 21);
             this.dgvPosetioci.Name = "dgvPosetioci";

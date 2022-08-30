@@ -134,6 +134,11 @@ namespace ZooloskiVrt.Server.AplikacionaLogika
             return ((VratiSvePrijaveSO)so).Prijave;
         }
 
-      
+        public object VratiSvePosetioceZaPaket(Paket paket)
+        {
+            OpstaSistemskaOperacija so = new VratiSvePosetioceZaPaket(paket);
+            so.IzvrsiTemplejt();
+            return ((VratiSvePosetioceZaPaket)so).Posetioci;
+        }
     }
 }
