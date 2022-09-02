@@ -126,13 +126,13 @@ namespace ZooloskiVrt.Server.Main
                         odgovor.Rezultat = Controller.Instance.VratiSvePosetioceZaPaket(zahtev.Objekat as Paket);
                         if (odgovor.Rezultat != null)
                         {
-                            odgovor.PrikaziPoruku = false;
+                            odgovor.PrikaziPoruku = true;
                             odgovor.Ok = true;
                             odgovor.Poruka = "Sistem je uspesno ucitao posetioce za izabrani paket";
                         }
                         else
                         {
-                            odgovor.PrikaziPoruku = false;
+                            odgovor.PrikaziPoruku = true;
                             odgovor.Ok = false;
                             odgovor.Poruka = "Sistem ne moze da ucita podatke o posetiocima";
                         }
@@ -234,7 +234,20 @@ namespace ZooloskiVrt.Server.Main
                             odgovor.Poruka = "Sistem je pronasao pakete po zadatoj vrednosti";
                         }
                         break;
-                    
+                    case Operacija.PronadjiPakete2:
+                        odgovor.Rezultat = Controller.Instance.PronadjiPakete(zahtev.Objekat as Paket);
+                        if (odgovor.Rezultat == null)
+                        {
+                            odgovor.Ok = false;
+                            odgovor.PrikaziPoruku = false;
+                        }
+                        else
+                        {
+                            odgovor.Ok = true;
+                            odgovor.PrikaziPoruku = false;
+                        }
+                        break;
+
                     case Operacija.VratiSvePosetioce:
                         odgovor.Rezultat = Controller.Instance.VratiSvePosetioce(zahtev.Objekat as Posetilac);
                         if (odgovor.Rezultat == null)

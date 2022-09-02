@@ -16,10 +16,11 @@ namespace ZooloskiVrt.Klijent.Forme.UserControls.Paketi
     {
         PaketPosetilacKontroler kontroler;
 
-        public UCPaketPosetioci(Paket paket)
+
+        public UCPaketPosetioci(Paket paket, List<Posetilac> source)
         {
             InitializeComponent();
-            kontroler = new PaketPosetilacKontroler(this,paket);
+            kontroler = new PaketPosetilacKontroler(this,paket,source);
             kontroler.Inicijalizuj();
         }
     }

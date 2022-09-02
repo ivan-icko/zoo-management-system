@@ -52,16 +52,28 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
 
             int idPaketa = ((Paket)uc.DgvPretrazi.SelectedRows[0].DataBoundItem).IdPaketa;
             List<Paket> pom = new List<Paket>();
-            if ((pom = Komunikacija.Instance.ZahtevajIVratiRezultat<List<Paket>>(Common.Komunikacija.Operacija.PronadjiPakete, new Paket() { Uslov = $"IdPaketa={idPaketa}" })) == null)
+            if ((pom = Komunikacija.Instance.ZahtevajIVratiRezultat<List<Paket>>(Common.Komunikacija.Operacija.PronadjiPakete2, new Paket() { Uslov = $"IdPaketa={idPaketa}" })) == null)
             {
                 return;
             }
-            izabraniPaket = pom.SingleOrDefault();
 
-            UCPaketPosetioci UcPretrazi = new UCPaketPosetioci(izabraniPaket);
-            UcPretrazi.Dock = DockStyle.Fill;
-            pnlMain.Controls.Clear();
-            pnlMain.Controls.Add(UcPretrazi);
+            izabraniPaket = pom.FirstOrDefault();
+            izabraniPaket.JoinUslov = "join Prijava on (Posetilac.IdPosetioca=Prijava.IdPosetioca)";
+            izabraniPaket.Uslov = $"where IdPaketa={izabraniPaket.IdPaketa}";
+
+            var source = Komunikacija.Instance.ZahtevajIVratiRezultat<List<Posetilac>>(Common.Komunikacija.Operacija.VratiSvePosetioceZaPaket, izabraniPaket);
+            if (source == null)
+            {
+                return;
+            }
+            else
+            {
+                UCPaketPosetioci UcPretrazi = new UCPaketPosetioci(izabraniPaket,source);
+                UcPretrazi.Dock = DockStyle.Fill;
+                pnlMain.Controls.Clear();
+                pnlMain.Controls.Add(UcPretrazi);
+            }
+
         }
 
 
@@ -112,7 +124,7 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
             DateTime datumDo = new DateTime();
             if (!string.IsNullOrEmpty(uc.TxtBrojSlobodnihMesta.Text))
             {
-                if (!int.TryParse(uc.TxtBrojSlobodnihMesta.Text, out int broj) || broj<0)
+                if (!int.TryParse(uc.TxtBrojSlobodnihMesta.Text, out int broj) || broj < 0)
                 {
                     System.Windows.Forms.MessageBox.Show("Greska pri unosu cene");
                     return false;
@@ -139,13 +151,13 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
                 }
                 datumDo = datum;
             }
-            noviPaket = NapuniPaket(uc.TxtNazivPaketa.Text, cenaPaketa, datumDo,brojSlobodnihMesta);
+            noviPaket = NapuniPaket(uc.TxtNazivPaketa.Text, cenaPaketa, datumDo, brojSlobodnihMesta);
             return true;
         }
 
-        private Paket NapuniPaket(string naziv, double cena, DateTime datum,int brojSlobodnihMesta)
+        private Paket NapuniPaket(string naziv, double cena, DateTime datum, int brojSlobodnihMesta)
         {
-            Paket p = new Paket(null, naziv, cena == 0 ? null : cena.ToString(), datum == new DateTime() ? null : datum.ToString("yyyy-MM-dd"),brojSlobodnihMesta==0? null:brojSlobodnihMesta.ToString());
+            Paket p = new Paket(null, naziv, cena == 0 ? null : cena.ToString(), datum == new DateTime() ? null : datum.ToString("yyyy-MM-dd"), brojSlobodnihMesta == 0 ? null : brojSlobodnihMesta.ToString());
             return p;
         }
 
@@ -160,7 +172,7 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
                 MessageBox.Show("Niste odabrali paket za azuriranje");
                 return;
             }
-            Paket p = new Paket(izabraniPaket.IdPaketa.ToString(), null, null, null,null);
+            Paket p = new Paket(izabraniPaket.IdPaketa.ToString(), null, null, null, null);
             p.IdPaketa = izabraniPaket.IdPaketa;
             p.NazivPaketa = uc.TxtNazivPaketa.Text;
             p.Cena = double.Parse(uc.TxtCena.Text);
@@ -183,7 +195,7 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
                 System.Windows.Forms.MessageBox.Show("Sva polja su obavezna");
                 return false;
             }
-            if (!double.TryParse(uc.TxtCena.Text, out double cena) || cena<0)
+            if (!double.TryParse(uc.TxtCena.Text, out double cena) || cena < 0)
             {
                 System.Windows.Forms.MessageBox.Show("Greska pri unosu cene");
                 return false;
@@ -263,7 +275,7 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
             int idZivotinje = (uc.DgvDodajZivotinju.SelectedRows[0].DataBoundItem as Zivotinja).IdZivotinje;
             Zivotinja ziv = new Zivotinja() { IdZivotinje = idZivotinje, Uslov = $"IdZivotinje={idZivotinje}" };
             List<Zivotinja> pom = new List<Zivotinja>();
-            if ((pom=Komunikacija.Instance.ZahtevajIVratiRezultat<List<Zivotinja>>(Common.Komunikacija.Operacija.PronadjiZivotinjeZaPaket, ziv)) == null)
+            if ((pom = Komunikacija.Instance.ZahtevajIVratiRezultat<List<Zivotinja>>(Common.Komunikacija.Operacija.PronadjiZivotinjeZaPaket, ziv)) == null)
             {
                 return;
             }
@@ -344,7 +356,7 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
                 System.Windows.Forms.MessageBox.Show("Sva polja su obavezna");
                 return false;
             }
-            if (!double.TryParse(uc.TxtCena.Text, out double cena) || cena<0)
+            if (!double.TryParse(uc.TxtCena.Text, out double cena) || cena < 0)
             {
                 System.Windows.Forms.MessageBox.Show("Greska pri unosu cene");
                 return false;

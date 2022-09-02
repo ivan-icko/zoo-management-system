@@ -69,6 +69,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije
                         repozitorijum.Sacuvaj(new PaketZivotinja { IdPaketa = maxId, IdZivotinje = id });
                     }
                 }
+                
             }
             catch (Exception ex)
             {

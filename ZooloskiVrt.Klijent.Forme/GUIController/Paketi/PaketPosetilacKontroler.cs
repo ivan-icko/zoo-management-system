@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using ZooloskiVrt.Common.Domen;
 using ZooloskiVrt.Klijent.Forme.UserControls.Paketi;
 
@@ -12,19 +13,20 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController.Paketi
     {
         public Paket Paket { get; set; }
         public UCPaketPosetioci uc;
+        private List<Posetilac> source;
 
-        public PaketPosetilacKontroler(UCPaketPosetioci ucPP,Paket paket)
+        public PaketPosetilacKontroler(UCPaketPosetioci ucPP,Paket paket, List<Posetilac> source)
         {
             this.Paket = paket;
             this.uc = ucPP;
+            this.source = source;
         }
 
         public void Inicijalizuj()
         {
             uc.Lbl2.Text = Paket.NazivPaketa;
-            Paket.JoinUslov = "join Prijava on (Posetilac.IdPosetioca=Prijava.IdPosetioca)";
-            Paket.Uslov = $"where IdPaketa={Paket.IdPaketa}";
-            uc.DgvPP.DataSource = Komunikacija.Instance.ZahtevajIVratiRezultat<List<Posetilac>>(Common.Komunikacija.Operacija.VratiSvePosetioceZaPaket,Paket);
+            uc.DgvPP.DataSource = source;
+           
         }
     }
 }
