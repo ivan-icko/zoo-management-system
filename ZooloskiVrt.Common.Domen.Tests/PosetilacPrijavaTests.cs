@@ -153,10 +153,12 @@ namespace UnitTestProject3
         [Fact]
         public void ProcitajRed_Fact()
         {
-            ido = new PosetilacPrijava()
+            ido = new Posetilac()
             {
-                NazivPaketa="Paket1",
-                ImeIPrezime="Ivan Stepanovic"
+                IdPosetioca =1,
+                ImeIPrezime = "Maja Majic",
+                Telefon = "065",
+                Email = "m@m"
             };
             ProcitajRedTest();
             Assert.Equal(ido, rez);

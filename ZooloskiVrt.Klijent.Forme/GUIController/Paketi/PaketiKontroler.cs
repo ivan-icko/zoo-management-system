@@ -346,6 +346,7 @@ namespace ZooloskiVrt.Klijent.Forme.GUIController
             p.NazivPaketa = uc.TxtNazivPaketa.Text;
             p.Cena = double.Parse(uc.TxtCena.Text);
             p.DatumDo = (DateTime.Parse(uc.TxtDatumDo.Text)).Date;
+            p.BrojSlobodnihMesta = int.Parse(uc.TxtBrojSlobodnihMesta.Text);
             return p;
         }
 

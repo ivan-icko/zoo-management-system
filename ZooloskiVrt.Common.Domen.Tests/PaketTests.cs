@@ -129,7 +129,8 @@ namespace UnitTestProject3
                 IdPaketa = 1,
                 NazivPaketa = "Paket111",
                 Cena = 3334,
-                DatumDo = DateTime.Parse(datum)
+                DatumDo = DateTime.Parse(datum),
+                BrojSlobodnihMesta = 1
             };
             ProcitajRedTest();
             Assert.Equal(ido, rez);

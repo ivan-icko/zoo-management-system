@@ -22,7 +22,7 @@ namespace ZooloskiVrt.Server.SistemskeOperacije.Tests
 
     public class SacuvajPrijavuSOTests
     {
-        [Fact]
+        
         public void SacuvajPrijavu_Ok_Fact()
         {
             using (var mock = AutoMock.GetLoose())

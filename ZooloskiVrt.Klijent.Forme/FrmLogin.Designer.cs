@@ -58,7 +58,6 @@ namespace ZooloskiVrt.Klijent.Forme
             this.txtKorisnickoIme.Name = "txtKorisnickoIme";
             this.txtKorisnickoIme.Size = new System.Drawing.Size(100, 22);
             this.txtKorisnickoIme.TabIndex = 2;
-            this.txtKorisnickoIme.Text = "a";
             // 
             // label2
             // 
@@ -85,7 +84,6 @@ namespace ZooloskiVrt.Klijent.Forme
             this.txtSifra.PasswordChar = '*';
             this.txtSifra.Size = new System.Drawing.Size(100, 22);
             this.txtSifra.TabIndex = 4;
-            this.txtSifra.Text = "a";
             // 
             // groupBox1
             // 

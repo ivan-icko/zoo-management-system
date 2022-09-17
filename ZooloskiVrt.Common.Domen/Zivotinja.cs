@@ -254,14 +254,6 @@ namespace ZooloskiVrt.Common.Domen
 
 
 
-
-
-
-
-
-
-
-
         /// <summary>
         /// Metoda koja postavlja staniste zivotinje
         /// </summary>
